@@ -1,13 +1,13 @@
 
 
 :root {
-    --primary-color: #fe0084;
+    --primary-color: #004F9F;
     --secondary-color: #f5deb3;
     --title: #fff9e6;
     --contrast: #fe8629;
     --text-base: #333;
     --cta: #c5006c;
-    --background: #1a1a1a;
+    --background: #18191B;
     --text-color: #ffffff;
     --gradient1: linear-gradient(135deg, #e6007e, #6a1b9a);
     --gradient2: linear-gradient(90deg, #ff3399, #4a148c);
@@ -22,4 +22,4 @@
     font-family: var(--font-base);
     text-decoration: none;
     list-style: none;
-}
+} 
