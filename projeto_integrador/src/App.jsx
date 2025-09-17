@@ -1,5 +1,8 @@
 import './App.css'
 import Cabecalho from './components/Cabecalho'
+import Nav from './components/nav'
+import Bolinha from './components/Bolinhas'
+import Produtos from './components/Produtos'
 
 function App() {
   
@@ -8,8 +11,13 @@ function App() {
     <>
       <header>
       <Cabecalho />
+       <Nav />
       </header>
-    
+      <Bolinha/>
+      <section>
+        <Produtos />
+      </section>
+      
     </>
   )
 }

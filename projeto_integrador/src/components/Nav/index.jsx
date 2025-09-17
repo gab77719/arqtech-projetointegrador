@@ -1,4 +1,5 @@
 import "./Nav.css"
+import Furadeira from "../../assets/furadeira.png"
 
 export default function Nav() {
     return (
@@ -9,7 +10,7 @@ export default function Nav() {
                 <a href="#servicos" className="cabecalho__link">Materiais</a>
                 <a href="#servicos" className="cabecalho__link">Parcerias</a>
             </nav>
-            <img src="" alt="" />
+            <img src= {Furadeira} alt="Furadeira" />
 
         </section>
         
