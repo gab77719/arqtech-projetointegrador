@@ -10,15 +10,19 @@
 }
 
 .cabecalho__logo {
-    height: 40px;
+    height: 100px;
     width: auto;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .cabecalho__search {
-    flex: 1;
+    flex: 7;
     max-width: 400px;
     position: relative;
 }
+
+
 
 .cabecalho__search input {
     width: 100%;
@@ -30,7 +34,7 @@
 }
 
 .cabecalho__search input::placeholder {
-    color: #999;
+    color: #666;
 }
 
 .cabecalho__search-icon {
@@ -46,7 +50,7 @@
 .cabecalho__actions {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 50px;
 }
 
 .cabecalho__link {
@@ -83,10 +87,15 @@
 
 /* Menu de navegação secundária */
 .cabecalho-nav {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 12px 20px;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.95), 
+        rgba(0, 0, 0, 0.85)
+    );
+    justify-content: center;
+    padding: 20px;
     display: flex;
-    gap: 40px;
+    gap: 200px;
 }
 
 .cabecalho-nav__link {
@@ -96,11 +105,21 @@
     padding: 5px 0;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
+    gap: 100px;
 }
 
 .cabecalho-nav__link:hover {
     border-bottom-color: white;
 }
+
+
+.cabecalho_banner {
+    width: 100%;
+    height: 900px;
+    margin-top: 10px;
+    margin-top: auto;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {

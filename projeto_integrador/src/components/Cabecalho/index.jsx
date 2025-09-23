@@ -29,7 +29,7 @@ export default function Cabecalho() {
                 <a href="#parcerias" className="cabecalho-nav__link">Parcerias</a>
             </nav>
 
-            <img src={furadeira} alt="Logo da empresa" className="cabecalho__logo"></img> 
+            <img src={furadeira} alt="banner" className="cabecalho_banner"></img> 
         </>
 
     );
