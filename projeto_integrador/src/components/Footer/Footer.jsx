@@ -12,6 +12,8 @@ function Footer() {
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
+
+            
         </div>
         </footer>
 
