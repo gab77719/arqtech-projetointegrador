@@ -1,0 +1,15 @@
+.produtos .Destaque{
+   
+    margin-left: 30px;
+}
+.produtos hr{
+    margin-left: 30px;
+    width: 25%;
+}
+.produtos_lista{
+    display: flex;  
+    padding: 100px;
+}
+.produto{
+    border-color: white;
+}

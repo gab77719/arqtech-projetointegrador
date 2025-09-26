@@ -19,7 +19,6 @@ function App() {
       <section>
       <Sobre/>
       </section>
-      
     </>
   )
 }

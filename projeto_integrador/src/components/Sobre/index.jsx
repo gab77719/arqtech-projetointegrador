@@ -1,4 +1,5 @@
 import './Sobre.css';
+import Logo from '../../public/Logo.png';
 
 export default function Sobre() {
     return (
@@ -20,6 +21,7 @@ export default function Sobre() {
                   bolso. Algo que você só encontra aqui, na ARQTECH <br/>
                   engenharia. 
                  </p>
+                 <img src={Logo} alt="" />
         </section>
         
     );}

@@ -1,0 +1,24 @@
+.container {
+    display: flex;       
+    justify-content: center; 
+    gap: 40px;             
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;     
+  }
+  
+  .bolinha {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px var(--text-color);
+  }
