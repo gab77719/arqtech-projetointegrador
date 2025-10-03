@@ -1,4 +1,7 @@
+@import 'tailwindcss';
+
 .cabecalho {
+    @apply bg-[var(--)];
     background-color: var(--primary-color);
     color: white;
     padding: 15px 20px;
@@ -118,6 +121,7 @@
     height: 900px;
     margin-top: 10px;
     margin-top: auto;
+    object-fit: cover;
 }
 
 

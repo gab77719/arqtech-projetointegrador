@@ -1,6 +1,6 @@
-import 'Cadastro.css'
+import './Cadastro.css'
 
-export default function Cadastro() {
+export default function Cadastrar() {
   return (
     <div className="Cadastro">
       <h1>Cadastrar-se</h1>

@@ -1,6 +1,7 @@
 import './Cabecalho.css';
 import Logo from '../../public/Logo.png';
 import furadeira from '../../assets/furadeira.png';
+import { Link } from 'react-router-dom';
 
 export default function Cabecalho() {
     return (
@@ -15,7 +16,7 @@ export default function Cabecalho() {
                 
                 <div className="cabecalho__actions">
                     <a href="#conta" className="cabecalho__link">Conta</a>
-                    <a href="#cadastro" className="cabecalho__link">Cadastre-se</a>
+                    <Link to="/Cadastrar">Cadastrar</Link>
                     <a href="#carrinho" className="cabecalho__cart">
                         <ion-icon name="cart-outline"></ion-icon>
                     </a>
