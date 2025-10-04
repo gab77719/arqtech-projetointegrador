@@ -15,13 +15,12 @@ export default function Bolinha() {
 
       <div className="item">
         <div className="bolinha">Carro</div>
-        <h3>Entrega rapida para todo <br />
-        brasil</h3>
+        <h3>Entrega rapida</h3>
       </div>
 
       <div className="item">
         <div className="bolinha">Carro</div>
-        <h3>Combine a troca ou <br />
+        <h3>Combine a troca e
         pagamento</h3>
       </div>
     </div>

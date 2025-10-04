@@ -1,15 +1,52 @@
-.produtos .Destaque{
-   
-    margin-left: 30px;
+.produtos .Destaque {
+    margin-top: 50px;
+    margin-left: 40px;
 }
-.produtos hr{
-    margin-left: 30px;
-    width: 25%;
+.produto_imagem{
+    width: 260px;
+    height: 260px;
 }
-.produtos_lista{
-    display: flex;  
+.produtos hr {
+    margin-left: 40px;
+    width: 33%;
+}
+
+.produtos_lista {
     padding: 100px;
+    display: flex;
+    gap: 100px;
 }
-.produto{
-    border-color: white;
+
+.produto {
+    background-color: black;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 30px;
 }
+.produto_valor{
+    display: flex;
+    flex-direction: column;
+}
+.produto_preco{
+    margin-top: 30px;
+}
+.btn-comprar button {
+    margin-left: 150px;
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.btn-mais{
+    margin-left: 1200px;
+}
+.btn-mais button {
+    height: 30px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: #1E1E1E;
+    color: white;
+}
+

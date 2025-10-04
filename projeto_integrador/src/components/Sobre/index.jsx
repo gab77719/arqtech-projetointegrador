@@ -1,11 +1,13 @@
 import './Sobre.css';
 import Logo from '../../public/Logo.png';
+import Dps from '../../assets/DpsS.png';
 
 export default function Sobre() {
     return (
-        <section>
+        <section className='sobre-section'>
             <h1 className='titulo'> Sobre Nós</h1>
             <hr />
+            <div className='sobre-container'>
             <p className='sobre'>A Arqtech é uma plataforma online especializada na <br/>
                  venda de ferramentas manuais, elétricas e acessórios <br/>
                  para uso doméstico ou profissional. Ele permite que <br/>
@@ -22,6 +24,9 @@ export default function Sobre() {
                   engenharia. 
                  </p>
                  <img src={Logo} alt="" />
+                 </div>
+
+                 <img src={Dps} alt="" />
         </section>
         
     );}
