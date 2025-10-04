@@ -1,8 +1,6 @@
 
-
 .cabecalho {
     background-color: var(--primary-color);
-    color: white;
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -19,12 +17,10 @@
 }
 
 .cabecalho__search {
-    flex: 7;
+    width: 500px;
     max-width: 400px;
     position: relative;
 }
-
-
 
 .cabecalho__search input {
     width: 100%;
@@ -33,10 +29,6 @@
     border-radius: 20px;
     font-size: 14px;
     outline: none;
-}
-
-.cabecalho__search input::placeholder {
-    color: #666;
 }
 
 .cabecalho__search-icon {
@@ -49,45 +41,36 @@
     pointer-events: none;
 }
 
+
 .cabecalho__actions {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.cabecalho__link {
+.cabecalho__actions a{
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 4px 8px;
     border-radius: 20px;
     border: 1px solid white;
     font-size: 14px;
     transition: all 0.3s ease;
-}
-
-.cabecalho__link:hover {
-    background-color: white;
-    color: var(--primary-color, #1e5aa8);
-}
-
-.cabecalho__cart {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 20px;
-    border: 1px solid white;
-    font-size: 18px;
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
 }
+
+.cabecalho__actions ::picker-icon{
+
+}
+
 
 .cabecalho__cart:hover {
     background-color: white;
     color: var(--primary-color, #1e5aa8);
 }
 
-/* Menu de navegação secundária */
+/* Nav2 */
 .cabecalho-nav {
     background: linear-gradient(
         to bottom, 
@@ -121,34 +104,4 @@
     margin-top: 10px;
     margin-top: auto;
     object-fit: cover;
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .cabecalho {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
-    .cabecalho__search {
-        order: 3;
-        flex-basis: 100%;
-        max-width: 100%;
-        margin-top: 10px;
-    }
-    
-    .cabecalho__actions {
-        gap: 10px;
-    }
-    
-    .cabecalho__link {
-        padding: 6px 12px;
-        font-size: 12px;
-    }
-    
-    .cabecalho-nav {
-        gap: 20px;
-        overflow-x: auto;
-    }
 }

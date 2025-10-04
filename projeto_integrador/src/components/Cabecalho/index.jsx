@@ -15,11 +15,11 @@ export default function Cabecalho() {
                 </div>
                 
                 <div className="cabecalho__actions">
-                    <a href="#conta" className="cabecalho__link">Conta</a>
+                    <Link to="">Conta</Link>
                     <Link to="/Cadastrar">Cadastrar</Link>
-                    <a href="#carrinho" className="cabecalho__cart">
+                    <Link to="/">
                         <ion-icon name="cart-outline"></ion-icon>
-                    </a>
+                  </Link>
                 </div>
             </header>
             
