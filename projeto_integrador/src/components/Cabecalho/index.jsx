@@ -24,10 +24,10 @@ export default function Cabecalho() {
             </header>
             
             <nav className="cabecalho-nav">
-                <a href="#categorias" className="cabecalho-nav__link">Categorias</a>
-                <a href="#ferramentas" className="cabecalho-nav__link">Ferramentas</a>
-                <a href="#materiais" className="cabecalho-nav__link">Materiais</a>
-                <a href="#parcerias" className="cabecalho-nav__link">Parcerias</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#ferramentas" >Ferramentas</a>
+                <Link to="/Materias">Materiais</Link>
+                <a href="#parcerias">Parcerias</a>
             </nav>
 
             <img src={furadeira} alt="banner" className="cabecalho_banner"></img> 

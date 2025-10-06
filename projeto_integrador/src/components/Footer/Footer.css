@@ -2,7 +2,24 @@
     background-color: var(--primary-color);
     margin-top: 100px;
     display: flex;
+    gap: 100px;
 }
 .footer-content{
     margin-top: 80px;
+}
+.contatos{
+    margin-top: 30px;
+}
+.rede-social{
+    margin-top: 30px;   
+}
+.localizacao{
+    margin-top: 30px;   
+}
+.logos-footer{
+    flex-direction: column;
+}
+.parcerias{
+    margin-top: -40px;
+    margin-left: 20px;
 }

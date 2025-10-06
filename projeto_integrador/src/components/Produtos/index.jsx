@@ -12,7 +12,7 @@ export default function Produtos() {
         <div className="produto">
           <img src={Produto1} alt="Produto 1" className="produto_imagem" />
           <h4 className="produto_nome">
-            Martelete Combinado Bateria 18V LXTDHR182Z
+            Martelete Combinado Bateria 18V <br /> LXTDHR182Z
           </h4>
           <div className="produto_valor">
             <p className="produto_preco">R$ 999,99</p>
@@ -24,7 +24,7 @@ export default function Produtos() {
         <div className="produto">
           <img src={Produto2} alt="Produto 2" className="produto_imagem" />
           <h4 className="produto_nome">
-            Parafusadeira-Bateria 40V XGTHP002GA201
+            Parafusadeira-Bateria 40V <br /> XGTHP002GA201
           </h4>
           <p className="produto_preco">R$ 499,99</p>
           <div className="btn-comprar">
@@ -35,7 +35,7 @@ export default function Produtos() {
         <div className="produto">
           <img src={Produto3} alt="Produto 3" className="produto_imagem" />
           <h4 className="produto_nome">
-            Serra Mármore 12000w MO400B 127V-Makita{" "}
+            Serra Mármore 12000w MO400B <br /> 127V-Makita
           </h4>
           <p className="produto_preco">R$ 436,00</p>
           <div className="btn-comprar">

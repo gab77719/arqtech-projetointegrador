@@ -12,6 +12,7 @@
 }
 
 .produtos_lista {
+    margin-left: 100px;
     padding: 100px;
     display: flex;
     gap: 100px;

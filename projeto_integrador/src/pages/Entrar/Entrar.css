@@ -1,0 +1,41 @@
+.container-entrar{
+    background-image: url('../../assets/Concv\ 1.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.entrar{
+    margin-top: -60px;
+    border: 2px solid white;
+    width: 700px;
+    height: 650px;
+    margin-left: 430px ;
+    border-radius: 20px;
+}
+.inputs{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 500px;
+    gap: 20px;
+}
+.inputs input{
+    background-color: #BEBBB9;
+    height: 40px;
+    padding-left: 20px;
+}
+.inputs a{
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70px;
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    color: white;
+    background-color: #242948;
+    transition: all 0.3s ease;
+}
+.inputs a:hover{
+    background-color: #1b1f3a;
+}
