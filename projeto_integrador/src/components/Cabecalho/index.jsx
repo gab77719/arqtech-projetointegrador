@@ -26,7 +26,7 @@ export default function Cabecalho() {
             <nav className="cabecalho-nav">
                 <a href="#categorias">Categorias</a>
                 <a href="#ferramentas" >Ferramentas</a>
-                <Link to="/Materias">Materiais</Link>
+                <Link to="/Materiais">Materiais</Link>
                 <a href="#parcerias">Parcerias</a>
             </nav>
 
