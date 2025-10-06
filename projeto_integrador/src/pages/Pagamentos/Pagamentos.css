@@ -1,0 +1,214 @@
+.Pagamentos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* Cabeçalho */
+.cabecalho_pagamentos {
+    background-color: #242948;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho_pagamentos a {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_pagamentos img {
+    height: 60px;
+    width: auto;
+}
+
+.cabecalho_pagamentos h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Container de Pagamentos */
+.container-pagamento {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.metodo-pagamento {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.metodo-pagamento:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icone-pagamento {
+    width: 80px;
+    height: 80px;
+    background-color: #242948;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+}
+
+.icon-pix {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.metodo-pagamento h3 {
+    color: #242948;
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+
+.metodo-pagamento p {
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.metodo-pagamento button {
+    background-color: #242948;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.metodo-pagamento button:hover {
+    background-color: #1b1f3a;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer-pagamentos {
+    background-color: #242948;
+    color: white;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.marcas h4,
+.contatos h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.marcas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.marca-item {
+    color: #BEBBB9;
+    font-size: 14px;
+    padding: 5px 0;
+    border-left: 3px solid transparent;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.marca-item:hover {
+    border-left-color: #4A90E2;
+    color: white;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contatos p {
+    color: #BEBBB9;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.redes-sociais a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: #357ABD;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho_pagamentos {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container-pagamento {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .metodo-pagamento {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-pagamentos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+    }
+}

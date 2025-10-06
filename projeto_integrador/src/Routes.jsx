@@ -11,6 +11,7 @@ export default () => {
         <Route path="/Cadastrar" element={<Cadastrar/>}/>
         <Route path="/Materiais" element={<Materiais/>}/>
         <Route path="/Entrar" element={<Entrar/>}/>
+        
         </Routes>
     )
 }

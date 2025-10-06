@@ -39,3 +39,7 @@
 .inputs a:hover{
     background-color: #1b1f3a;
 }
+
+.link {
+    cursor: pointer;
+}

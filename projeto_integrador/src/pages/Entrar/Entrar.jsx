@@ -16,8 +16,10 @@ export default function Entrar() {
         <input type="email" placeholder="Email" />
         <ion-icon name="lock-closed-outline"></ion-icon>
         <input type="password" placeholder="Senha" />
-        <p className='conta?'>Já tem conta? Entre.</p>
-        <Link to={"/"}>Entrar</Link>
+        <p className='conta?'>
+          <Link to="/Home">Já tem conta? Entre.</Link>
+        </p>
+        <Link to={"/Home"}>Entrar</Link>
       </div>
       </div>
     </div>
