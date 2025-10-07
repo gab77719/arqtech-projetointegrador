@@ -1,8 +1,13 @@
 import './Bolinha.css'
-
+import furadeira from '../../assets/furadeira.png';
 export default function Bolinha() {
   return (
+    <>
+    <section>
+        <img src={furadeira} alt="banner" className="cabecalho_banner"></img> 
+    </section>
     <div className="container">
+      
       <div className="item">
         <div className="bolinha">Carro</div>
         <h3>Compra online</h3>
@@ -24,5 +29,8 @@ export default function Bolinha() {
         pagamento</h3>
       </div>
     </div>
+
+ 
+    </>
   )
 }

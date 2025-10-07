@@ -1,0 +1,19 @@
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.materiais{
+    font-family: "Ovo", serif;
+    font-size: 29px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    opacity: 60%;
+}
+
+
+
+

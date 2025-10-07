@@ -1,6 +1,6 @@
 import './Cabecalho.css';
 import Logo from '../../public/Logo.png';
-import furadeira from '../../assets/furadeira.png';
+
 import { Link } from 'react-router-dom';
 
 export default function Cabecalho() {
@@ -30,7 +30,7 @@ export default function Cabecalho() {
                 <a href="#parcerias">Parcerias</a>
             </nav>
 
-            <img src={furadeira} alt="banner" className="cabecalho_banner"></img> 
+         
         </>
 
     );

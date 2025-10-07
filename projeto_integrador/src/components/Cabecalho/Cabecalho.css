@@ -18,8 +18,7 @@
 
 .cabecalho__search {
     width: 500px;
-    max-width: 400px;
-    position: relative;
+    margin-left: 80px;
 }
 
 .cabecalho__search input {

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
 :root {
     --primary-color: #004F9F;
@@ -13,6 +13,12 @@
     --gradient2: linear-gradient(90deg, #ff3399, #4a148c);
     --font-base: 'Roboto', sans-serif;
     --font-title: 'PlayFlair Display', serif;
+    --Ovo: 'Ovo', serif;
+}
+.ovo-regular {
+  font-family: "Ovo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
