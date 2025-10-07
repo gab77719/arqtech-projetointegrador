@@ -1,6 +1,7 @@
 import './materiais.css'
-import Cabecalho from '../../components/Cabecalho'
-
+import Logo from '../../public/Logo.png';
+import { Link } from 'react-router-dom';
+import Ferramenta from '../../assets/ferramentas.png';
 export default function Materiais() {   
     return (
      <>
@@ -13,7 +14,7 @@ export default function Materiais() {
                 </div>
                 
                 <div className="cabecalho__actions">
-                    <Link to="">Conta</Link>
+                    <Link to="/s">Conta</Link>
                     <Link to="/Cadastrar">Cadastrar</Link>
                     <Link to="/">
                         <ion-icon name="cart-outline"></ion-icon>
@@ -28,7 +29,7 @@ export default function Materiais() {
                 <a href="#parcerias">Parcerias</a>
             </nav>
 
-            <img src={furadeira} alt="banner" className="cabecalho_banner"></img> 
+            <img src={Ferramenta} alt="banner" className="cabecalho_banner"></img> 
         </>
 
     )
