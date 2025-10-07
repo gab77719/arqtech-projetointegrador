@@ -5,14 +5,14 @@
 }
 .sobre-section hr{
     width: 13%;
-    margin-left: 40px;
+    margin-left: 140px;
 }
 
 .sobre-section .titulo{
-    margin-left: 40px;
+    margin-left: 140px;
 }
 .sobre-section .sobre{
-    margin-left: 40px;
+    margin-left: 140px;
     margin-top: 20px;
     font-size: 20px;
     line-height: 1.5;
@@ -28,4 +28,7 @@
     width: 500px;
     height: auto;
     margin-left: 170px;
+}
+.imagem {
+   width: 100%;
 }

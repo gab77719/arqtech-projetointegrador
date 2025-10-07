@@ -9,7 +9,7 @@
     border: 2px solid white;
     width: 700px;
     height: 650px;
-    margin-left: 430px ;
+    margin-left: 650px ;
     border-radius: 20px;
 }
 .inputs{
@@ -27,7 +27,7 @@
 }
 .inputs a{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 70px;
     border-radius: 5px;
     height: 50px;
@@ -43,3 +43,24 @@
 p {
     cursor: pointer;
 }
+.link-cadastrar {
+    display: block;            
+    margin-top: 50px;         
+    text-align: center;     
+    font-size: 24px;        
+    color: white;              
+    text-decoration: none;    
+}
+
+.G ion-icon{
+    margin-left: 120px;
+    font-size: 35px;
+    padding-inline: 10px;
+}
+.entre{
+    margin-left: -30px;
+}
+p.conta .entre {
+    margin-left: 5px;
+    background-color: transparent;
+  }

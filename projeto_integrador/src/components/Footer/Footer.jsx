@@ -34,6 +34,7 @@ export default function Footer() {
           href="https://www.facebook.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="face"
         >
           <ion-icon name="logo-facebook"></ion-icon>
         </a>
@@ -41,6 +42,7 @@ export default function Footer() {
           href="https://www.instagram.com"
           target="_blank"
           rel="noopener noreferrer"
+          className="insta"
         >
           <ion-icon name="logo-instagram"></ion-icon>
         </a>
@@ -54,6 +56,10 @@ export default function Footer() {
           Cidade Exemplo – SP, CEP <br />
           01234-567{" "}
         </p>
+      </div>
+
+      <div className="direitos">
+      © Todos os direitos reservados
       </div>
     </footer>
   );

@@ -26,7 +26,7 @@ export default function Sobre() {
                  <img src={Logo} alt="" />
                  </div>
 
-                 <img src={Dps} alt="" />
+                 <img src={Dps} alt="" className='imagem' />
         </section>
         
     );}

@@ -12,8 +12,8 @@
 }
 
 .produtos_lista {
-    margin-left: 100px;
-    padding: 100px;
+    margin-left: 340px;
+    padding: 50px;
     display: flex;
     gap: 100px;
 }
@@ -36,18 +36,18 @@
     height: 30px;
     width: 90px;
     border-radius: 20px;
-    background-color: #1E1E1E;
+    background-color: rgb(88, 88, 88);
     color: white;
 }
 
 .btn-mais{
-    margin-left: 1200px;
+    margin-left: 1500px;
 }
 .btn-mais button {
     height: 30px;
     width: 90px;
     border-radius: 20px;
-    background-color: #1E1E1E;
+    background-color: rgb(88, 88, 88);
     color: white;
 }
 

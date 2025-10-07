@@ -18,8 +18,13 @@ export default function Cadastrar() {
         <input type="email" placeholder="Email" />
         <ion-icon name="lock-closed-outline"></ion-icon>
         <input type="password" placeholder="Senha" />
-       <p className='conta'>Já tem conta? entre já</p>
-        <Link to={"/"}>Cadastrar-se</Link>
+       <p className='conta'>Já tem conta? 
+        <Link to='/Entrar' className='entre'> Entre já</Link></p>
+       <div className='G'>
+       <ion-icon name="logo-google"></ion-icon>
+       <ion-icon name="logo-facebook"></ion-icon>
+       </div>
+        <Link to={"/"} className='link-cadastrar'>Cadastrar-se</Link>
       </div>
       </div>
     </div>

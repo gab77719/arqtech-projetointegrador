@@ -10,16 +10,19 @@ export default function Entrar() {
       </div>
       <div className='entrar'>
          
-      <div className="inputs">
+      <div className="inputsE">
          <h1>Entrar</h1>
         <ion-icon name="mail-outline"></ion-icon>
         <input type="email" placeholder="Email" />
         <ion-icon name="lock-closed-outline"></ion-icon>
         <input type="password" placeholder="Senha" />
-        <p className='conta?'>
-          <Link to="/Home">Já tem conta? Entre.</Link>
-        </p>
-        <Link to={"/Home"}>Entrar</Link>
+        <p className='conta'>Ainda não tem conta? 
+        <Link to='/' className='entre'> cadastre-se já</Link></p>
+        <div className='G'>
+       <ion-icon name="logo-google"></ion-icon>
+       <ion-icon name="logo-facebook"></ion-icon>
+       </div>
+        <Link to="/" className='link-cadastrar'>Entrar</Link>
       </div>
       </div>
     </div>

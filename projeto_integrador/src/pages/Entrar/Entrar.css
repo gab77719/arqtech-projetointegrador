@@ -9,10 +9,10 @@
     border: 2px solid white;
     width: 700px;
     height: 650px;
-    margin-left: 430px ;
+    margin-left: 650px ;
     border-radius: 20px;
 }
-.inputs{
+.inputsE{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -20,14 +20,14 @@
     width: 500px;
     gap: 20px;
 }
-.inputs input{
+.inputsE input{
     background-color: #BEBBB9;
     height: 40px;
     padding-left: 20px;
 }
-.inputs a{
+.inputsE a{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 70px;
     border-radius: 5px;
     height: 50px;
@@ -36,7 +36,7 @@
     background-color: #242948;
     transition: all 0.3s ease;
 }
-.inputs a:hover{
+.inputsE a:hover{
     background-color: #1b1f3a;
 }
 
