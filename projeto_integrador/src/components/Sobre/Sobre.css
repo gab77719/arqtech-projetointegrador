@@ -10,6 +10,7 @@
 
 .sobre-section .titulo{
     margin-left: 140px;
+    position: relative;
 }
 .sobre-section .sobre{
     margin-left: 140px;
@@ -19,7 +20,7 @@
 }
 .sobre-container{
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 20px;
     margin-top: 40px;
 }

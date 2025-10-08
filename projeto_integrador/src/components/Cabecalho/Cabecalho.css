@@ -17,11 +17,14 @@
 }
 
 .cabecalho__search {
+    border: 1px solid #ffff;
+    border-radius:20px ;
     width: 500px;
     margin-left: 80px;
 }
 
 .cabecalho__search input {
+    
     width: 100%;
     padding: 8px 40px 8px 15px;
     border: none;
@@ -31,6 +34,7 @@
 }
 
 .cabecalho__search-icon {
+       
     position: absolute;
     right: 12px;
     top: 50%;
