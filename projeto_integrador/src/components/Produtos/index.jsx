@@ -2,6 +2,7 @@ import "./Produtos.css";
 import Produto1 from "../../assets/produto1.png";
 import Produto2 from "../../assets/produto2.png";
 import Produto3 from "../../assets/produto3.png";
+import { Link } from "react-router-dom";
 
 export default function Produtos() {
   return (
@@ -44,7 +45,7 @@ export default function Produtos() {
         </div>
         </div>
         <div className="btn-mais">
-          <button className="btn-comprar1">Mais</button>
+          <Link to='/Parcerias'><button className="btn-comprar1">Mais</button></Link>
         </div>
      
     </section>

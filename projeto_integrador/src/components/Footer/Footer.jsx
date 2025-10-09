@@ -1,6 +1,6 @@
 import "./Footer.css";
 import Logo from "../../public/Logo.png";
-
+import { Link } from 'react-router-dom';
 import makita1 from "../../assets/makita1.png";
 import CSN1 from "../../assets/CSN1.png";
 import bosch1 from "../../assets/bosch1.png";
@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="parcerias">
           <img src={makita1} alt="Makita" />
           <img src={CSN1} alt="CSN" />
-          <img src={bosch1} alt="Bosch" />
+          <img src={bosch1} alt="Bosch1" />
           <img src={DeWalt1} alt="DeWalt" />
         </div>
       </div>

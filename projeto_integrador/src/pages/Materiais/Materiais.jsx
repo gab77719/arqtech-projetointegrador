@@ -2,6 +2,7 @@ import './materiais.css'
 import { Link } from 'react-router-dom';
 import Ferramenta from '../../assets/ferramentas M.png';
 import Cabecalho from '../../components/Cabecalho';
+import Footer from '../../components/Footer/Footer'
 import Produto1 from '../../assets/image 47.png';
 import Produto2 from '../../assets/tijolo.png';
 import Produto3 from '../../assets/gesso.png';
@@ -105,53 +106,8 @@ export default function Materiais() {
                       </div>
                   </section>
 
-                  <footer className="footer">
-                       <div className="logos-footer">
-                         <img src={Logo} alt="Arqtech" />
-                         <div className="parcerias">
-                           <img src={makita1} alt="Makita" />
-                           <img src={CSN1} alt="CSN" />
-                           <img src={bosch1} alt="Bosch" />
-                           <img src={DeWalt1} alt="DeWalt" />
-                         </div>
-                       </div>
-                       <div className="contatos">
-                         <p>
-                           <strong>Contatos</strong> <br />
-                           <br />
-                           E-mail: arqtech@gmail.com <br />
-                           Telefone: (12) 1234-9089
-                         </p>
-                       </div>
-                       <div className="rede-social">
-                         <p>
-                           <strong>Siga-nos nas Redes sociais</strong>
-                         </p>
-                         <a
-                           href="https://www.facebook.com"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                         >
-                           <ion-icon name="logo-facebook"></ion-icon>
-                         </a>
-                         <a
-                           href="https://www.instagram.com"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                         >
-                           <ion-icon name="logo-instagram"></ion-icon>
-                         </a>
-                       </div>
-                 
-                       <div className="localizacao">
-                         <p>
-                           <strong>Localização</strong> <br />
-                           <br />
-                           Av. das Palmeiras, 123 – Centro, <br />
-                           Cidade Exemplo – SP, CEP <br />
-                           01234-567{" "}
-                         </p>
-                       </div>
+                  <footer >
+                       <Footer/>
                      </footer>
         
         </>

@@ -1,12 +1,13 @@
 import './Cabecalho.css';
 import Logo from '../../public/Logo.png';
 import { Link } from 'react-router-dom';
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Cabecalho() {
     return (
         <>
             <header className="cabecalho">
-                <img src={Logo} alt="Logo da empresa" className="cabecalho__logo" />
+                <Link to='/'><img src={Logo} alt="Logo da empresa" className="cabecalho__logo" /></Link>
                 
                 <div className="cabecalho__search">
                     <input type="text" placeholder="Pesquisar..." />
@@ -23,10 +24,10 @@ export default function Cabecalho() {
             </header>
             
             <nav className="cabecalho-nav">
-                <a href="#categorias">Categorias</a>
-                <a href="#ferramentas" >Ferramentas</a>
+                <Link to='/'>Categorias</Link>
+                <Link to='/'>Ferramentas</Link>
                 <Link to="/Materiais">Materiais</Link>
-                <a href="#parcerias">Parcerias</a>
+                <Link to='/Parcerias'>Parcerias</Link>
             </nav>
 
          

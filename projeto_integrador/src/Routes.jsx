@@ -5,6 +5,8 @@ import Materiais from "./pages/Materiais/Materiais";
 import Entrar from "./pages/Entrar/Entrar";
 import Carrinho from "./pages/Carrinho/Carrinho";
 import Conta from "./pages/Conta/Conta";
+import Parcerias from "./pages/Parcerias/Parcerias"
+
 
 export default () => {
     return(
@@ -14,7 +16,8 @@ export default () => {
         <Route path="/Materiais" element={<Materiais/>}/>
         <Route path="/Entrar" element={<Entrar/>}/>
         <Route path="/Carrinho" element={<Carrinho/>}/>
-         <Route path="/Conta" element={<Conta/>}/>
+        <Route path="/Conta" element={<Conta/>}/>
+        <Route path="/Parcerias" element={<Parcerias/>}/>
         </Routes>
     )
 }
