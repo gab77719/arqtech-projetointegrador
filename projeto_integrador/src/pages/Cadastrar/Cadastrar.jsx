@@ -6,7 +6,7 @@ export default function Cadastrar() {
   return (
     <div className="container-cadastrar">
       <div className='logo'>
-        <img src={Logo} alt="" />
+        <Link to="/"><img src={Logo} alt="" /></Link>
       </div>
       <div className='cadastrar'>
          

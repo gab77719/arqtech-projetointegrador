@@ -5,12 +5,12 @@
     height: 100vh;
 }
 .entrar{
-    margin-top: -60px;
+    margin-top: 60px;
     border: 2px solid white;
     backdrop-filter: blur(0.4rem);
     width: 700px;
     height: 650px;
-    margin-left: 650px ;
+    margin-left: 600px ;
     border-radius: 20px;
 }
 .inputsE{
@@ -43,4 +43,7 @@
 
 .link {
     cursor: pointer;
+}
+.logo{
+    width: 130px;
 }

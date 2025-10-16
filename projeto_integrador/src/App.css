@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+@import "tailwindcss";
 
 :root {
     --primary-color: #004F9F;
@@ -22,8 +23,6 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: var(--font-base);
     text-decoration: none;

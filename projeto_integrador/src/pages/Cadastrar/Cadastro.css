@@ -5,12 +5,12 @@
     height: 100vh;
 }
 .cadastrar{
-    margin-top: -60px;
+    margin-top: 60px;
     border: 2px solid white;
     backdrop-filter: blur(0.4rem);
     width: 700px;
     height: 650px;
-    margin-left: 650px ;
+    margin-left: 600px ;
     border-radius: 20px;
 }
 .inputs{
@@ -41,9 +41,7 @@
     background-color: #1b1f3a;
 }
 
-p {
-    cursor: pointer;
-}
+
 .link-cadastrar {
     display: block;            
     margin-top: 50px;         
@@ -64,4 +62,7 @@ p {
 p.conta .entre {
     margin-left: 5px;
     background-color: transparent;
+  }
+  .logo img{
+    width: 300px;
   }
