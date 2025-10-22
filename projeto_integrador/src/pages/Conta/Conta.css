@@ -4,3 +4,14 @@
     height: 100vh;
     background-size: cover;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004a9f; /* sua cor azul */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
