@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 import Cadastrar from "./pages/Cadastrar/Cadastrar";
 import Home from "./pages/Home";
 import Materiais from "./pages/Materiais/Materiais";
@@ -10,14 +10,16 @@ import Parcerias from "./pages/Parcerias/Parcerias"
 
 export default () => {
     return(
-        <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/Cadastrar" element={<Cadastrar/>}/>
-        <Route path="/Materiais" element={<Materiais/>}/>
-        <Route path="/Entrar" element={<Entrar/>}/>
-        <Route path="/Carrinho" element={<Carrinho/>}/>
-        <Route path="/Conta" element={<Conta/>}/>
-        <Route path="/Parcerias" element={<Parcerias/>}/>
-        </Routes>
+        <BrowserRouter basename="/">
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/Cadastrar" element={<Cadastrar/>}/>
+                <Route path="/Materiais" element={<Materiais/>}/>
+                <Route path="/Entrar" element={<Entrar/>}/>
+                <Route path="/Carrinho" element={<Carrinho/>}/>
+                <Route path="/Conta" element={<Conta/>}/>
+                <Route path="/Parcerias" element={<Parcerias/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
