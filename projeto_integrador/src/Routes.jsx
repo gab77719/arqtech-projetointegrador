@@ -10,7 +10,7 @@ import Parcerias from "./pages/Parcerias/Parcerias"
 
 export default () => {
     return(
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/arqtech-projetointegrador">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/Cadastrar" element={<Cadastrar/>}/>
