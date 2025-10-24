@@ -52,3 +52,11 @@
     color: white;
 }
 
+.btn-mais button:hover{
+    border: 2px solid white;
+}
+
+.btn-comprar button:hover{
+    border: 2px solid white;
+}
+

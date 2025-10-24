@@ -45,7 +45,7 @@ export default function Produtos() {
         </div>
         </div>
         <div className="btn-mais">
-          <Link to='/Parcerias'><button className="btn-comprar1">Mais</button></Link>
+          <Link to='/Parcerias'><button className="btn-mais1">Mais</button></Link>
         </div>
      
     </section>

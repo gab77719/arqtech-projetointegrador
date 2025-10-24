@@ -1,23 +1,13 @@
 import "./Footer.css";
 import Logo from "../../public/Logo.png";
-import { Link } from 'react-router-dom';
-import makita1 from "../../assets/makita1.png";
-import CSN1 from "../../assets/CSN1.png";
-import bosch1 from "../../assets/bosch1.png";
-import DeWalt1 from "../../assets/DeWalt1.png";
 
 export default function Footer() {
   return (
+    <>
     <footer className="footer">
       <div className="logos-footer">
-        <img src={Logo} alt="Arqtech" />
-        <div className="parcerias">
-          <img src={makita1} alt="Makita" />
-          <img src={CSN1} alt="CSN" />
-          <img src={bosch1} alt="Bosch1" />
-          <img src={DeWalt1} alt="DeWalt" />
+        <img src={Logo} alt="Arqtech" />    
         </div>
-      </div>
       <div className="contatos">
         <p>
           <strong>Contatos</strong> <br />
@@ -62,5 +52,6 @@ export default function Footer() {
       © Todos os direitos reservados
       </div>
     </footer>
+    </>
   );
 }
