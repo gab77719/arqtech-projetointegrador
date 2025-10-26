@@ -25,9 +25,9 @@ export default function Parcerias() {
         <Cabecalho />
       </header>
       {/* Makita */}
-      <img src={Makita} alt="" />
+      <img src={Makita} alt="Makita" className="mt-40" />
 
-      <div className="produtos_lista">
+      <div className="produtos_lista z-auto">
         <div className="produto">
           <img src={Produto1} alt="Produto 1" className="produto_imagem" />
           <h4 className="produto_nome">

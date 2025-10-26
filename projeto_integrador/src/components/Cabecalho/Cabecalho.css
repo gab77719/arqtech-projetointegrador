@@ -9,9 +9,8 @@
 }
 
 .cabecalho__logo {
-    height: 100px;
-    width: auto;
-    margin-right: 20px;
+    height: 130px;
+    width: auto;    
     cursor: pointer;
 }
 
@@ -62,10 +61,14 @@
 
 
 /* Nav2 */
-.cabecalho-nav {     
-    justify-content: center;
+.cabecalho-nav {  
+    width: 100%;
+    position: absolute ;
+    background-color: transparent;
+    backdrop-filter:  blur(5rem);
     padding: 20px;
     display: flex;
+    justify-content: center;
     gap: 200px;
 }
 
