@@ -6,6 +6,7 @@ import Entrar from "./pages/Entrar/Entrar";
 import Carrinho from "./pages/Carrinho/Carrinho";
 import Conta from "./pages/Conta/Conta";
 import Parcerias from "./pages/Parcerias/Parcerias"
+import Comprar from "./pages/Comprar/Comprar"
 
 
 export default () => {
@@ -18,6 +19,7 @@ export default () => {
                 <Route path="/Carrinho" element={<Carrinho/>}/>
                 <Route path="/Conta" element={<Conta/>}/>
                 <Route path="/Parcerias" element={<Parcerias/>}/>
+                <Route path="/Comprar" element={<Comprar/>}/>
             </Routes>
     )
 }

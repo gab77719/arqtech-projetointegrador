@@ -18,7 +18,7 @@ export default function Produtos() {
           <div className="produto_valor">
             <p className="produto_preco">R$ 999,99</p>
             <div className="btn-comprar">
-              <button className="btn-comprar1">Comprar</button>
+             <button className="btn-comprar1">Comprar</button>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Produtos() {
           </h4>
           <p className="produto_preco">R$ 436,00</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+            <Link to="/Comprar"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
         </div>
