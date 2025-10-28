@@ -5,7 +5,7 @@ import Dps from '../../assets/DpsS.png';
 export default function Sobre() {
     return (
         <section className='sobre-section'>
-            <h1 className='titulo'> Sobre Nós</h1>
+            <h1 className='titulo text-3xl'> Sobre Nós</h1>
             <hr />
             <div className='sobre-container'>
             <p className='sobre'>A Arqtech é uma plataforma online especializada na <br/>

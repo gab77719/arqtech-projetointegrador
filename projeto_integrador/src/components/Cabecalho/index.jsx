@@ -13,7 +13,7 @@ export default function Cabecalho() {
 
         <div className="cabecalho__search">
           <input type="text" placeholder="Pesquisar..." />
-        </div>      
+        </div>
 
         <div className="cabecalho__actions">
           <Link to="/Conta">Conta</Link>
@@ -25,7 +25,14 @@ export default function Cabecalho() {
       </header>
 
       <nav className="cabecalho-nav">
-        <Link to="/">Categorias</Link>
+        <Link to="/">
+          <select className="categorias">
+            <option select>Categorias</option>
+            <option>acabemento</option>
+            <option>eletronico</option>
+          </select>
+        
+        </Link>
         <Link to="/">Ferramentas</Link>
         <Link to="/Materiais">Materiais</Link>
         <Link to="/Parcerias">Parcerias</Link>

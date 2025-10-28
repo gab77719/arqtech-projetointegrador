@@ -41,10 +41,10 @@
 }
 
 .btn-mais{
-    margin-left: 1500px;
+    display: flex;
+    justify-content: end;
 }
 .btn-mais button {
-    position: relative;
     height: 30px;
     width: 90px;
     border-radius: 20px;
@@ -54,6 +54,7 @@
 
 .btn-mais button:hover{
     border: 2px solid white;
+    
 }
 
 .btn-comprar button:hover{

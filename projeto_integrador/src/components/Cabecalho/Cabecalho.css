@@ -75,7 +75,7 @@
 .cabecalho-nav a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
     padding: 5px 0;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
@@ -93,4 +93,8 @@
     margin-top: 10px;
     margin-top: auto;
     object-fit: cover;
+}
+.cabecalho-nav .categorias option{
+    background-color: gray;
+   
 }

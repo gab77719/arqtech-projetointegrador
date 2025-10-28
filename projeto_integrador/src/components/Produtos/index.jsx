@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function Produtos() {
   return (
     <section className="produtos">
-      <h1 className="Destaque">Linha Elétrica - Mais vendidas</h1>
+      <h1 className="Destaque text-3xl">Linha Elétrica - Mais vendidas</h1>
       <hr />
       <div className="produtos_lista">
         <div className="produto">

@@ -5,32 +5,6 @@
     background-color: #f5f5f5;
 }
 
-/* Cabeçalho */
-.cabecalho_pagamentos {
-    background-color: #242948;
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.cabecalho_pagamentos a {
-    display: flex;
-    align-items: center;
-}
-
-.cabecalho_pagamentos img {
-    height: 60px;
-    width: auto;
-}
-
-.cabecalho_pagamentos h2 {
-    color: white;
-    font-size: 28px;
-    font-weight: 600;
-}
-
 /* Container de Pagamentos */
 .container-pagamento {
     flex: 1;
@@ -63,7 +37,7 @@
 .icone-pagamento {
     width: 80px;
     height: 80px;
-    background-color: #242948;
+    background-color: var( --primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -91,7 +65,7 @@
 }
 
 .metodo-pagamento button {
-    background-color: #242948;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 8px;
