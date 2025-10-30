@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/projeto_integrador/'>
+    <BrowserRouter basename='https://gab77719.github.io/arqtech-projetointegrador/'>
       <App />
     </BrowserRouter>
     <BrowserRouter/>
