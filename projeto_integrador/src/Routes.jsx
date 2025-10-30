@@ -14,7 +14,7 @@ export default function Rotas() {
     return(
         <BrowserRouter basename='/arqtech-projetointegrador'>
             <Routes>
-                <Route basename="/arqtech-projetointegrador" path="/" element={<Home/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
                 <Route path="/Cadastrar" element={<Cadastrar/>}></Route>
                 <Route path="/Materiais" element={<Materiais/>}></Route>
                 <Route path="/Entrar" element={<Entrar/>}></Route>
