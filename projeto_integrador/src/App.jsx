@@ -4,7 +4,9 @@ import Rotas from './Routes'
 function App() {
   return (
     <>
-      <Rotas/>
+      <BrowserRouter basename='/arqtech-projetointegrador'>
+        <Rotas />
+      </BrowserRouter>
     </>
 
   )
