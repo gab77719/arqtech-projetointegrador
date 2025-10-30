@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
       tailwindcss(),],
-        base: '/projeto_integrador/'
+        base: './'
 })
