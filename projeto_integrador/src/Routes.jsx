@@ -13,15 +13,15 @@ import Pagamentos from "./pages/Pagamentos/Pagamentos";
 export default () => {
     return(
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/Cadastrar" element={<Cadastrar/>}/>
-                <Route path="/Materiais" element={<Materiais/>}/>
-                <Route path="/Entrar" element={<Entrar/>}/>
-                <Route path="/Carrinho" element={<Carrinho/>}/>
-                <Route path="/Conta" element={<Conta/>}/>
-                <Route path="/Parcerias" element={<Parcerias/>}/>
-                <Route path="/Comprar" element={<Comprar/>}/>
-                <Route path="/Pagamentos" element={<Pagamentos/>}/>
+                <Route basename="arqtech-projetointegrador" path="/" element={<Home/>}></Route>
+                <Route path="/Cadastrar" element={<Cadastrar/>}></Route>
+                <Route path="/Materiais" element={<Materiais/>}></Route>
+                <Route path="/Entrar" element={<Entrar/>}></Route>
+                <Route path="/Carrinho" element={<Carrinho/>}></Route>
+                <Route path="/Conta" element={<Conta/>}></Route>
+                <Route path="/Parcerias" element={<Parcerias/>}></Route>
+                <Route path="/Comprar" element={<Comprar/>}></Route>
+                <Route path="/Pagamentos" element={<Pagamentos/>}></Route>
             </Routes>
     )
 }
