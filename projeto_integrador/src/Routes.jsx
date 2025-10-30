@@ -1,4 +1,4 @@
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Cadastrar from "./pages/Cadastrar/Cadastrar";
 import Home from "./pages/Home";
 import Materiais from "./pages/Materiais/Materiais";
