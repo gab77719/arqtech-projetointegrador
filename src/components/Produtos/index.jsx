@@ -2,7 +2,7 @@ import "./Produtos.css";
 import Produto1 from "../../assets/produto1.png";
 import Produto2 from "../../assets/produto2.png";
 import Produto3 from "../../assets/produto3.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Produtos() {
   return (

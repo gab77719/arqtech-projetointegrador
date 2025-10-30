@@ -1,6 +1,6 @@
 import './Entrar.css'
 import Logo from '../../public/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 export default function Entrar() {
   return (

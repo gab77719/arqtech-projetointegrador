@@ -2,7 +2,7 @@ import "./Conta.css";
 import Cabecalho from "../../components/Cabecalho";
 import Footer from "../../components/Footer/Footer";
 import Logo from "../../public/Logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Conta() {
   return (

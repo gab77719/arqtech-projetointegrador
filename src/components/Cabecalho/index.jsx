@@ -1,6 +1,6 @@
 import "./Cabecalho.css";
 import Logo from "../../public/Logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function Cabecalho() {

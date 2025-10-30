@@ -1,6 +1,6 @@
 import "./Pagamentos.css";
 import Logo from "../../public/Logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
 import Footer from "../../components/Footer/Footer";
 

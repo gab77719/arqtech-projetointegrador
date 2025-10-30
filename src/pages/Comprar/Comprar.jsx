@@ -1,5 +1,5 @@
 import "./Comprar.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
 import Produto3 from "../../assets/produto3.png";
 

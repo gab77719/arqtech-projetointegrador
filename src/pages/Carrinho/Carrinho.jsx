@@ -1,6 +1,6 @@
 import "./Carrinho.css";
 import Cabecalho from "../../components/Cabecalho";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import Logo from "../../public/Logo.png";
 import { CiLocationOn } from "react-icons/ci";
 import Produto1 from "../../assets/produto1.png";

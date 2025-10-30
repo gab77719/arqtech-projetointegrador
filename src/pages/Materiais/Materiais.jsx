@@ -1,5 +1,5 @@
 import './materiais.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import Ferramenta from '../../assets/ferramentas M.png';
 import Cabecalho from '../../components/Cabecalho';
 import Footer from '../../components/Footer/Footer'

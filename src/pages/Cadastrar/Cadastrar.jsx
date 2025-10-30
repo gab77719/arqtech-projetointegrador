@@ -1,6 +1,6 @@
 import './Cadastro.css' 
 import Logo from '../../public/Logo.png';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 export default function Cadastrar() {
   return (
