@@ -10,7 +10,7 @@ import Comprar from "./pages/Comprar/Comprar"
 import Pagamentos from "./pages/Pagamentos/Pagamentos";
 
 
-export default () => {
+export default function Rotas() {
     return(
             <Routes>
                 <Route basename="/arqtech-projetointegrador" path="/" element={<Home/>}></Route>

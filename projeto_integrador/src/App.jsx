@@ -1,5 +1,5 @@
 import './App.css'
-import Rotas from './Routes'
+import Rotas from './Routes.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
