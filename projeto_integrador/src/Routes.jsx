@@ -12,6 +12,7 @@ import Pagamentos from "./pages/Pagamentos/Pagamentos";
 
 export default function Rotas() {
     return(
+        <BrowserRouter basename='/arqtech-projetointegrador'>
             <Routes>
                 <Route basename="/arqtech-projetointegrador" path="/" element={<Home/>}></Route>
                 <Route path="/Cadastrar" element={<Cadastrar/>}></Route>
@@ -23,5 +24,6 @@ export default function Rotas() {
                 <Route path="/Comprar" element={<Comprar/>}></Route>
                 <Route path="/Pagamentos" element={<Pagamentos/>}></Route>
             </Routes>
+        </BrowserRouter>
     )
 }
