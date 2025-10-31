@@ -10,7 +10,7 @@ export default function Conta() {
       <header>
         <Cabecalho />
       </header>
-      <div className="container-conta">
+      <div className="container-conta mt-20">
         <section>
           <div className="p-20 flex">
             <div className="bg-white rounded-full w-50 h-50 ">.</div>
@@ -42,12 +42,7 @@ export default function Conta() {
                 className="Email"
               />
             </div>
-            <Link to="/">
-              <button className="btn-mudar mt-20 ml-300">
-                Clique aqui para alterar <br />
-                os seus dados
-              </button>
-            </Link>
+
           </div>
         </section>
       </div>

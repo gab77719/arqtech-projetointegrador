@@ -1,12 +1,13 @@
 .container {
-    display: flex;  
-    justify-content: center;
-    gap: 40px;             
-  }
+  margin-top: 20px;
+  margin-left: 180px;
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+}
   
   .item {
     display: flex;
-
     flex-direction: column;  
     align-items: center;     
     text-align: center;  
@@ -14,8 +15,8 @@
   }
   
   .bolinha {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: var(--primary-color);
     border-radius: 50%;
     display: flex;

@@ -2,6 +2,8 @@ import "./Cabecalho.css";
 import Logo from "../../public/Logo.png";
 import { Link } from "react-router";
 import { IoIosArrowDown } from "react-icons/io";
+import { HiMagnifyingGlass } from "react-icons/hi2";
+
 
 export default function Cabecalho() {
   return (
@@ -9,6 +11,7 @@ export default function Cabecalho() {
       <header className="cabecalho">
         <Link to="/">
           <img src={Logo} alt="Logo da empresa" className="cabecalho__logo" />
+          
         </Link>
 
         <div className="cabecalho__search">

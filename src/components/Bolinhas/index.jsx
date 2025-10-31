@@ -13,22 +13,22 @@ export default function Bolinha() {
     <div className="container">
       
       <div className="item">
-        <div className= "bolinha"><IoCartOutline size={40}/></div>
+        <div className= "bolinha"><IoCartOutline size={70}/></div>
         <h3>Compra online</h3>
       </div>
 
       <div className="item">
-        <div className="bolinha"><SlWallet size={40}/></div>
+        <div className="bolinha"><SlWallet size={60}/></div>
         <h3>Parcelamento em até 10x</h3>
       </div>
 
       <div className="item">
-        <div className="bolinha"><CiDeliveryTruck size={50}/></div>
+        <div className="bolinha"><CiDeliveryTruck size={75}/></div>
         <h3>Entrega rapida</h3>
       </div>
 
       <div className="item">
-        <div className="bolinha"><CiLocationOn size={40}/></div>
+        <div className="bolinha"><CiLocationOn size={70}/></div>
         <h3>Combine a troca e
         pagamento</h3>
       </div>
