@@ -1,99 +1,146 @@
 .cabecalho {
-    background-color: var(--primary-color);
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .cabecalho__logo {
-    height: 130px;
-    width: auto;    
-    cursor: pointer;
+  height: 130px;
+  width: auto;
+  cursor: pointer;
 }
 
 .cabecalho__search {
-    background-color: white;
-    border-radius:20px ;
-    width: 500px;
-    margin-left: 80px;
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  margin-left: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px 50px 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.search-button svg {
+  color: black;
+  font-size: 1.2rem;
 }
 
 .cabecalho__search input {
-    color: black;
-    width: 100%;
-    padding: 8px 40px 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    outline: none;
+  color: black;
+  width: 100%;
+  padding: 8px 40px 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
 }
 
 .cabecalho__actions {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.cabecalho__actions a{
-    color: white;
-    text-decoration: none;
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 1px solid white;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
+.cabecalho__actions a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
-.cabecalho__actions ion-icon{
-    padding: 2px 10px;
-    font-size: 25px;
+.cabecalho__actions ion-icon {
+  padding: 2px 10px;
+  font-size: 25px;
 }
 
 .cabecalho__actions a:hover {
-    background-color: white;
-    color: var(--primary-color, #1e5aa8);
+  background-color: white;
+  color: var(--primary-color, #1e5aa8);
 }
 
-
 /* Nav2 */
-.cabecalho-nav {  
-    width: 100%;
-    position: absolute ;
-    background-color: transparent;
-    backdrop-filter:  blur(5rem);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 200px;
+.cabecalho-nav {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  backdrop-filter: blur(5rem);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
 }
 
 .cabecalho-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 5px 0;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
-    gap: 100px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  gap: 100px;
 }
 
 .cabecalho-nav a:hover {
-    border-bottom-color: white;
+  border-bottom-color: white;
 }
-
 
 .cabecalho_banner {
-    width: 100%;
-    height: 900px;
-    margin-top: 10px;
-    margin-top: auto;
-    object-fit: cover;
+  width: 100%;
+  height: 900px;
+  margin-top: 10px;
+  margin-top: auto;
+  object-fit: cover;
 }
-.cabecalho-nav .categorias option{
-    background-color: gray;
-   
+.cabecalho-nav .categorias option {
+  background-color: transparent;
 }
+
+.cabecalho-nav .categorias {
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease; 
+  }
+  
+  .cabecalho-nav .categorias:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  
+  .cabecalho-nav .categorias option,
+  .cabecalho-nav .categorias optgroup {
+    background-color: #333;
+    color: white;
+  }

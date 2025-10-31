@@ -23,10 +23,7 @@ export default function Materiais() {
         </header>
             <div className='banner'>
             <img src={Ferramenta} alt="banner" className="cabecalho_banner"></img>
-            </div> 
-            <section>
-                <p className='materiais'>Materiais</p>
-            </section>
+            </div>
 
               <section className="produtos">
                     <div className="produtos_lista">
