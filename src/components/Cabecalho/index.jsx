@@ -33,10 +33,10 @@ export default function Cabecalho() {
       </header>
 
       <nav className="cabecalho-nav">
-        {/* SELECT COM OPTIONS */}
+    
         <select
           className="categorias"
-          value="" // Força o valor vazio sempre
+          value="" 
           onChange={(e) => {
             if (e.target.value) {
               window.location.href = e.target.value;
