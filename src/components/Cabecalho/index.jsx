@@ -25,7 +25,7 @@ export default function Cabecalho() {
 
         <div className="cabecalho__actions">
           <Link to="/Conta">Conta</Link>
-          <Link to="/Cadastrar">Cadastrar</Link>
+          <Link to="/Entrar">Cadastrar</Link>
           <Link to="/Carrinho">
             <ion-icon name="cart-outline"></ion-icon>
           </Link>

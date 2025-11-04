@@ -49,6 +49,7 @@
     margin-left: 120px;
     font-size: 35px;
     padding-inline: 10px;
+    cursor: pointer;
 }
 
 .entre {
@@ -70,5 +71,13 @@ p.conta .entre {
 }
 
 .link {
+    cursor: pointer;
+}
+
+.google-btn {
+    cursor: pointer;
+}
+
+.face-btn {
     cursor: pointer;
 }
