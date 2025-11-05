@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .cabecalho {
   background-color: var(--primary-color);
   padding: 15px 20px;
@@ -144,3 +147,143 @@
     background-color: #333;
     color: white;
   }
+
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+  
+  .entrarBtn,
+  .anunciarBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+  }
+  
+  .entrarBtn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .entrarBtn:hover {
+    background-color: #f7f7f7;
+    border-color: #6e0ad6;
+  }
+  
+  .anunciarBtn {
+    background-color: #ff8100;
+    border: none;
+    color: #fff;
+    gap: 8px;
+  }
+  
+  .anunciarBtn:hover {
+    background-color: #e57706;
+  }
+  
+  
+  .profileContainer {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  /* Botão do perfil */
+  .profileBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.1s ease;
+    
+  }
+   .profileBtn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+  }
+  
+  /* Imagem do perfil */
+  .profileImg {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  
+  /* Letra inicial (fallback) */
+  .profileBtn span {
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  /* Ícone de seta */
+  .arrow {
+    color: #555;
+    transition: transform 0.2s ease;
+  }
+  
+  .profileBtn:focus .arrow,
+  .profileBtn:hover .arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* Menu dropdown */
+  .dropdownMenu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 10;
+    animation: fadeIn 0.2s ease-out;
+
+  }
+
+  .dropdownMenu a{
+    color: #333;
+  }
+
+  
+  /* Itens do menu */
+  .dropdownMenu button {
+    background: none;
+    border: none;
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .dropdownMenu button:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  

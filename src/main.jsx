@@ -12,7 +12,6 @@ import Conta from "./pages/Conta/Conta";
 import Parcerias from "./pages/Parcerias/Parcerias";
 import Comprar from "./pages/Comprar/Comprar";
 import Pagamentos from "./pages/Pagamentos/Pagamentos";
-import Teste from "./pages/Teste/Teste";
 
 
 import { AuthProvider } from './contexts/AuthContext';
@@ -32,7 +31,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="/Parcerias" element={<Parcerias />} />
           <Route path="/Comprar" element={<Comprar />} />
           <Route path="/Pagamentos" element={<Pagamentos />} />
-          <Route path="/Teste" element={<Teste />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

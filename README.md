@@ -1,12 +1,17 @@
-# React + Vite
+# ArqTech Engenharia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Você já passou pela dificuldade de encontrar materiais de construção de qualidade, com bom preço e entrega rápida? Pensando nisso, criamos o ArqTech, um site completo para quem quer construir ou reformar sem dor de cabeça.
 
-Currently, two official plugins are available:
+Nosso site é simples de usar e oferece produtos com ótimos preços e entrega garantida. Usamos estratégias inteligentes para atrair e ajudar o cliente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Por exemplo, colocamos ofertas por tempo limitado e avisamos quando o estoque está quase acabando – isso faz com que o cliente não perca tempo para garantir o que precisa.
 
-## Expanding the ESLint configuration
+Também mostramos os produtos mais vendidos e avaliações de outros clientes, o que ajuda na hora da decisão, pois cria confiança.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Nosso objetivo é ser mais do que uma loja virtual. Queremos ser o parceiro ideal na construção de sonhos.
+
+Além disso, oferecemos um guia gratuito com dicas de reforma, como forma de ajudar e gerar valor para o cliente desde o começo. E quem quiser pode criar uma conta para acompanhar seus pedidos e planejar a obra, criando um relacionamento duradouro com a loja.
+
+O Arqtech também destaca sempre os novos produtos e publica histórias reais de pessoas que conseguiram realizar o sonho da casa própria com nossos materiais – isso inspira e aproxima o cliente.

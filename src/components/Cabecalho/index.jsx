@@ -1,9 +1,23 @@
+import React from 'react';
 import "./Cabecalho.css";
 import Logo from "../../public/Logo.png";
 import { Link } from "react-router";
 import { IoIosSearch } from "react-icons/io";
+import { FaAngleDown } from 'react-icons/fa';
+import { doLogout } from '../../lib/AuthHandler';
+import { useAuth } from '../../contexts/AuthContext';
 
 export default function Cabecalho() {
+  const { logged, setLogged, user, setUser } = useAuth();
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  
+  const handleLogout = () => {
+    doLogout();
+    setLogged(false);
+    setUser(null);
+    setMenuOpen(false);
+    window.location.href = '/';
+  };
 
   return (
     <>
@@ -24,16 +38,46 @@ export default function Cabecalho() {
         </div>
 
         <div className="cabecalho__actions">
-          <Link to="/Conta">Conta</Link>
-          <Link to="/Entrar">Cadastrar</Link>
-          <Link to="/Carrinho">
-            <ion-icon name="cart-outline"></ion-icon>
-          </Link>
+          {logged ? (
+            <>
+              <Link to='/Carrinho' className='anuncio'>
+              <ion-icon name="cart-outline"></ion-icon>
+              </Link>
+              <div className='profileContainer'>
+                <button
+                  className='profileBtn'
+                  onClick={() => setMenuOpen(!menuOpen)}
+                >
+                  <img
+                    src={user.photoURL}
+                    alt={user.name}
+                    className='profileImg'
+                  />
+                  <span className="text-white">{user.name?.split(' ')[0]}</span>
+                  <FaAngleDown size={16} className='arrow' />
+                </button>
+                {menuOpen && (
+                  <div className='dropdownMenu'>
+                    <Link to="/Conta">Meu perfil</Link>
+                    <button>Favoritos</button>
+                    <button onClick={handleLogout}>Sair</button>
+                  </div>
+                )}
+              </div>
+            </>
+          ) : (
+            <>
+              <Link to="/Entrar">Entrar</Link>
+              <Link to="/Cadastrar">Cadastrar</Link>
+              <Link to="/Carrinho">
+                <ion-icon name="cart-outline"></ion-icon>
+              </Link>
+            </>
+          )}
         </div>
       </header>
 
       <nav className="cabecalho-nav">
-    
         <select
           className="categorias"
           value="" 
@@ -43,7 +87,7 @@ export default function Cabecalho() {
             }
           }}
         >
-         <option value="" disabled hidden>Categorias</option>
+          <option value="" disabled hidden>Categorias</option>
 
           <optgroup label="Máquinas">
             <option value="/categoria/maquinas/furadeiras">Furadeiras</option>
