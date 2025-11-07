@@ -3,6 +3,8 @@ import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
 import Produto3 from "../../assets/produto3.png";
 import { useCarrinho } from "../../contexts/CarrinhoContext";
+import Footer from "../../components/Footer/Footer";
+
 
 export default function Comprar() {
   const { adicionarAoCarrinho } = useCarrinho();
@@ -20,7 +22,7 @@ export default function Comprar() {
         <Cabecalho />
       </header>
 
-      <div className="min-h-screen text-white p-10">
+      <div className="min-h-screen text-white p-10 mt-30">
         <div className="max-w-7xl mx-auto">
           {/* --- Seção principal --- */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -131,6 +133,8 @@ export default function Comprar() {
           </div>
         </div>
       </div>
+    <Footer />
     </>
   );
+  
 }
