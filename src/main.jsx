@@ -12,11 +12,15 @@ import Carrinho from "./pages/Carrinho/Carrinho";
 import Conta from "./pages/Conta/Conta";
 import Parcerias from "./pages/Parcerias/Parcerias";
 import Comprar from "./pages/Comprar/Comprar";
+import Comprar2 from "./pages/Comprar2/Comprar2";
+import Comprar3 from "./pages/Comprar3/Comprar3";
 import Pagamentos from "./pages/Pagamentos/Pagamentos";
+import Endereço from "./pages/Endereço/Endereço";
 
 // Contextos
 import { AuthProvider } from "./contexts/AuthContext";
 import { CarrinhoProvider } from "./contexts/CarrinhoContext";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -33,7 +37,10 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Conta" element={<Conta />} />
             <Route path="/Parcerias" element={<Parcerias />} />
             <Route path="/Comprar" element={<Comprar />} />
+            <Route path="/Comprar2" element={<Comprar2 />} />
+            <Route path="/Comprar3" element={<Comprar3 />} />
             <Route path="/Pagamentos" element={<Pagamentos />} />
+            <Route path="/Endereço" element={<Endereço />} />
           </Routes>
         </CarrinhoProvider>
       </AuthProvider>
