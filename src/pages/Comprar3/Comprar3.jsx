@@ -9,7 +9,7 @@ export default function Comprar() {
   const { adicionarAoCarrinho } = useCarrinho();
 
   const produto = {
-    id: 1,
+    id: 2,
     nome: "Parafusadeira / Furadeira de Impacto Bateria 12V CXT",
     preco: 499,
     imagem: Produto2,

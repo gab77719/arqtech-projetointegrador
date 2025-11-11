@@ -1,0 +1,117 @@
+.compras-container {
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    padding: 40px 10%;
+    color: #222;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .compras-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #1e1e1e;
+  }
+  
+  .sem-compras {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .lista-pedidos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* ======== CARD DE PEDIDO ======== */
+  .pedido-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .pedido-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pedido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .pedido-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #1e1e1e;
+  }
+  
+  .pedido-header p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 3px;
+  }
+  
+  /* ======== STATUS ======== */
+  .status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+  
+  .status-entregue {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-enviado {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  /* ======== PRODUTOS ======== */
+  .pedido-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+  
+  .produto-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  /* ======== RODAPÉ DO PEDIDO ======== */
+  .pedido-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+  }
+  
+  .detalhes-btn {
+    background-color: #1e90ff;
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .detalhes-btn:hover {
+    background-color: #0077e6;
+  }

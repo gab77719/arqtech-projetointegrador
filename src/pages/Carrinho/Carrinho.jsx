@@ -78,7 +78,7 @@ export default function Carrinho() {
               />
               <span
                 onClick={handleSelecionarTodos}
-                className="font-medium text-gray-800"
+                className="font-medium text-white"
               >
                 Selecionar todos os produtos
               </span>

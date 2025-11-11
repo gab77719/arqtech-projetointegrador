@@ -6,7 +6,7 @@ export default function Endereço() {
    <>
    <Cabecalho />
 
-   <h1 className="text-3xl mt-22 flex justify-center">Adicione um endereço</h1>
+   <h1 className=" text-3xl mt-22 flex justify-center">Adicione um endereço</h1>
    
    <div className="containerEndereço">
         <div className="grid" >
@@ -36,14 +36,33 @@ export default function Endereço() {
         <p className="-ml-80 mt-10">Informações adicionais deste endereço (opcional)</p>
         <input className="-ml-18 border-2 border-gray-500 rounded w-150 h-30" type="text" placeholder="EX: Entre ruas, Cor do edificio, não tem campainha"  /> 
       
-       <div className="grid" >
-       <p className="-ml-76 mt-15"> Este é seu trabalho ou sua casa?</p>
-        
-        <input className="-ml-100" type="checkbox" /> Casa
-        <input className="" type="checkbox" /> Trabalho
-        </div>
+       <div className="" >
+      <p className="-ml-83 mt-15">Este é seu trabalho ou sua casa?</p>
+      </div>
 
-        <p className="-ml-25 mt-15">Dados de contato <br />
+ <div className='p-20 flex gap-50 -mt-5'>
+       <div className=''>
+            <h1 className=' -ml-2'>Casa</h1>
+    
+  <input
+    type="checkbox"
+    class="w-5 h-5 accent-blue-600 rounded border-gray-300 focus:ring-2 focus:ring-blue-400"/>
+      </div>
+
+
+      <div className=''>
+
+<h1 className=' -ml-5'>Trabalho</h1>
+  <input
+    type="checkbox"
+    class="w-5 h-5 accent-blue-600 rounded border-gray-300 focus:ring-2 focus:ring-blue-400"/>
+    </div>
+    
+    </div>
+
+
+
+        <p className="-ml-30 ">Dados de contato <br />
         Se houver algum problema no envio, você receberá uma ligação neste número.</p>
 
         <p className="-ml-130 mt-15">Nome e Sobrenome</p>
@@ -51,8 +70,15 @@ export default function Endereço() {
 
         <p className="-ml-131 mt-10">Telefone de contato</p>
         <input className='-ml-17 border-2 border-gray-500 rounded w-150 h-15' type="text" />
+
+            <button
+        
+                className="-ml-15 mt-10 inline-block  bg-blue-600 text-white px-30 py-3 rounded-md hover:bg-blue-700"
+                >
+                Salvar
+            </button>
    </div>
-   <button className="btnCont">Continuar</button>
+ 
    </>
   );
 }

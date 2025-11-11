@@ -23,9 +23,9 @@ export default function Comprar() {
 
       <div className="min-h-screen text-white p-10 mt-30">
         <div className="max-w-7xl mx-auto">
-          {/* --- Seção principal --- */}
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {/* Imagem do produto */}
+          
             <div className="bg-white rounded-lg p-8 flex items-center justify-center">
               <img
                 src={Produto3}
@@ -50,19 +50,18 @@ export default function Comprar() {
               </div>
 
               <div className="flex gap-4">
-                {/* Botão comprar */}
                 <Link to="/Pagamentos">
                   <button className="flex-1 bg-transparent border border-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition">
                     Comprar
                   </button>
                 </Link>
 
-                {/* Botão adicionar ao carrinho */}
                 <button
                   className="flex-1 bg-transparent border border-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition flex items-center justify-center gap-2"
                   onClick={() => {
                     adicionarAoCarrinho(produto);
                     alert("Produto adicionado ao carrinho!");
+                    
                   }}
                 >
                   Adicionar ao carrinho
@@ -71,7 +70,7 @@ export default function Comprar() {
             </div>
           </div>
 
-          {/* --- Segmentos e Itens --- */}
+        
           <div className="border border-gray-700 rounded-lg p-8 mb-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div>
@@ -98,7 +97,7 @@ export default function Comprar() {
             </div>
           </div>
 
-          {/* --- Descrição técnica --- */}
+    
           <div className="border border-gray-700 rounded-lg p-8">
             <h2 className="text-xl font-semibold mb-6">Descrição</h2>
             <div className="text-gray-300 leading-relaxed space-y-4">

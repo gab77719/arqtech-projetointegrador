@@ -40,7 +40,7 @@ export default function Cabecalho() {
         <div className="cabecalho__actions">
           {logged ? (
             <>
-            <Link to='/Carrinho' className='anuncio'>Compras</Link>
+            <Link to='/Compras' className='anuncio'>Compras</Link>
               <Link to='/Carrinho' className='anuncio'>
               <ion-icon name="cart-outline"></ion-icon>
               </Link>
