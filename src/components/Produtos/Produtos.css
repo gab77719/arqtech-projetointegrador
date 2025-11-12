@@ -32,12 +32,16 @@
     margin-top: 30px;
 }
 .btn-comprar button {
-    margin-left: 150px;
-    height: 30px;
-    width: 90px;
-    border-radius: 20px;
-    background-color: rgb(88, 88, 88);
+    background-color: var(--primary-color);
     color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 160px;
 }
 
 .btn-mais{
@@ -58,6 +62,7 @@
 }
 
 .btn-comprar button:hover{
-    border: 2px solid white;
+    background-color: #1b1f3a;
+    transform: scale(1.05);
 }
 

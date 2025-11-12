@@ -18,7 +18,7 @@ export default function Pagamentos() {
             </div>
             <h3>PIX</h3>
             <p>Pagamento instantâneo e seguro</p>
-            <button type="button">Comprar com PIX</button>
+            <Link to="/PIX"><button type="button">Comprar com PIX</button></Link>
           </div>
 
           <div className="metodo-pagamento">

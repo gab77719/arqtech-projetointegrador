@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.Btn-voltar{
+    margin-top: 60px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+
+}
+
+.Btn-voltar:hover{
+    background-color: #1b1f3a;
+    transform: scale(1.05);
+}
