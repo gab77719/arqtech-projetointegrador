@@ -1,6 +1,7 @@
 import React from "react";
-import "./Compras.css";
-import { Cabecalho } from "Cabecalho";
+import "./Compras.css"; 
+import Cabecalho from "../../components/Cabecalho";
+
 
 export default function Compras() {
   const pedidos = [
@@ -17,7 +18,7 @@ export default function Compras() {
     {
       id: "PED-002",
       data: "28/10/2025",
-      status: "Entregue",
+      status: "Entregue", 
       total: 189.90,
       produtos: [
         { nome: "Lixadeira Makita 300W", qtd: 1, preco: 189.90 },
