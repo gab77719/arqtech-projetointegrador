@@ -17,6 +17,7 @@ import Produto9 from "../../assets/BoschP3.png";
 import Produto10 from "../../assets/DewaltP1.png";
 import Produto11 from "../../assets/DewaltP2.png";
 import Produto12 from "../../assets/DewaltP3.png";
+import { Link } from "react-router";
 
 export default function Parcerias() {
   return (
@@ -36,7 +37,7 @@ export default function Parcerias() {
           <div className="produto_valor">
             <p className="produto_preco">R$ 999,99</p>
             <div className="btn-comprar">
-              <button className="btn-comprar1">Comprar</button>
+              <Link to="/Comprar2"><button className="btn-comprar1">Comprar</button></Link>
             </div>
           </div>
         </div>
@@ -47,7 +48,7 @@ export default function Parcerias() {
           </h4>
           <p className="produto_preco">R$ 499,99</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+           <Link to="/Comprar3"><button className="btn-comprar1">Comprar</button></Link> 
           </div>
         </div>
 
@@ -58,7 +59,7 @@ export default function Parcerias() {
           </h4>
           <p className="produto_preco">R$ 436,00</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+            <Link to="/Comprar"><button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
       </div>

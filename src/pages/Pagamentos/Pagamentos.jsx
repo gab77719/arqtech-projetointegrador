@@ -27,7 +27,7 @@ export default function Pagamentos() {
             </div>
             <h3>Cartão de Crédito</h3>
             <p>Visa, Mastercard, Elo e mais</p>
-            <Link to="/Endereço"> <button className="btn-comprar1">Comprar com cartão</button></Link>
+            <button className="btn-comprar1">Comprar com cartão</button>
           
           </div>
 

@@ -4,7 +4,7 @@
 }
 .btn-mudar:hover {
      transition: all 0.3s ease;
-    background-color: rgba(97, 96, 96, 0.158);
+     background-color: rgba(97, 96, 96, 0.158);
 }
 .inputsC{
     display: grid ;
