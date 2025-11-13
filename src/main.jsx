@@ -16,7 +16,8 @@ import Comprar2 from "./pages/Comprar2/Comprar2";
 import Comprar3 from "./pages/Comprar3/Comprar3";
 import Pagamentos from "./pages/Pagamentos/Pagamentos";
 import Endereço from "./pages/Endereço/Endereço";
-import PIX from "./pages/PIX/Pix"
+import Compras from "./pages/Compras/Compras";
+
 
 // Contextos
 import { AuthProvider } from "./contexts/AuthContext";
@@ -42,7 +43,8 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Comprar3" element={<Comprar3 />} />
             <Route path="/Pagamentos" element={<Pagamentos />} />
             <Route path="/Endereço" element={<Endereço />} />
-            <Route path="/PIX" element={<PIX/>} />
+            <Route path="/Compras" element={<Compras />} />
+
           </Routes>
         </CarrinhoProvider>
       </AuthProvider>

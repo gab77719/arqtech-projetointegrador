@@ -47,7 +47,13 @@ export default function Carrinho() {
     setSelecionarTodos(false);
   };
 
-  const total = carrinho.reduce((acc, p) => acc + p.preco, 0);
+  const total = carrinho.reduce((acc, p) => {
+    if (selecionados[p.id]) {
+      return acc + p.preco;
+    }
+    return acc;
+  }, 0);
+
 
   return (
     <>
@@ -126,7 +132,7 @@ export default function Carrinho() {
 
               <Link
                 to="/Pagamentos"
-                className="inline-block mt-2 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700"
+                className="inline-block mt-2 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 w-max mx-auto"
               >
                 Continuar compra
               </Link>

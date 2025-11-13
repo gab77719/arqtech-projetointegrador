@@ -105,7 +105,6 @@
 .cabecalho-nav a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
   padding: 5px 0;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -270,7 +269,6 @@
   .dropdownMenu a{
     color: #333;
   }
-
   
   /* Itens do menu */
   .dropdownMenu button {
@@ -279,11 +277,10 @@
     padding: 10px 16px;
     text-align: left;
     font-size: 14px;
-    color: #333;
+    color: #ff0000;
     cursor: pointer;
   }
-  
+
   .dropdownMenu button:hover {
-    background: rgba(0, 0, 0, 0.05);
+    color: #8a0000; ;
   }
-  
