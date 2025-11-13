@@ -11,7 +11,7 @@
 }
 .entrar{
     display: flex;
-    border: 2px solid white;
+    border: 2px solid blue;
     backdrop-filter: blur(0.4rem);
     width: 700px;
     height: 650px;
