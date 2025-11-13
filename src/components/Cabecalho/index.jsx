@@ -1,22 +1,31 @@
 import React from 'react';
 import "./Cabecalho.css";
 import Logo from "../../public/Logo.png";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { IoIosSearch } from "react-icons/io";
 import { FaAngleDown } from 'react-icons/fa';
 import { doLogout } from '../../lib/AuthHandler';
 import { useAuth } from '../../contexts/AuthContext';
 
+
 export default function Cabecalho() {
   const { logged, setLogged, user, setUser } = useAuth();
   const [menuOpen, setMenuOpen] = React.useState(false);
-  
+  const navigate = useNavigate(); 
+
   const handleLogout = () => {
     doLogout();
     setLogged(false);
     setUser(null);
     setMenuOpen(false);
-    window.location.href = '/';
+    navigate('/'); 
+  };
+
+  const handleCategoriaChange = (e) => {
+    const value = e.target.value;
+    if (value) {
+      navigate(value); 
+    }
   };
 
   return (
@@ -40,9 +49,9 @@ export default function Cabecalho() {
         <div className="cabecalho__actions">
           {logged ? (
             <>
-            <Link to='/Compras' className='anuncio'>Compras</Link>
+              <Link to='/Compras' className='anuncio'>Compras</Link>
               <Link to='/Carrinho' className='anuncio'>
-              <ion-icon name="cart-outline"></ion-icon>
+                <ion-icon name="cart-outline"></ion-icon>
               </Link>
               <div className='profileContainer'>
                 <button
@@ -64,8 +73,6 @@ export default function Cabecalho() {
                     <button onClick={handleLogout}>Sair</button>
                   </div>
                 )}
-
-                
               </div>
             </>
           ) : (
@@ -83,12 +90,8 @@ export default function Cabecalho() {
       <nav className="cabecalho-nav">
         <select
           className="categorias"
-          value="" 
-          onChange={(e) => {
-            if (e.target.value) {
-              window.location.href = e.target.value;
-            }
-          }}
+          defaultValue=""
+          onChange={handleCategoriaChange}
         >
           <option value="" disabled hidden>Categorias</option>
 

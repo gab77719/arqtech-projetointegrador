@@ -18,6 +18,11 @@ import Pagamentos from "./pages/Pagamentos/Pagamentos";
 import Endereço from "./pages/Endereço/Endereço";
 import Compras from "./pages/Compras/Compras";
 
+// Páginas de Categorias - Máquinas
+import Furadeiras from './pages/Categorias/Maquinas/Furadeiras';
+import Serras from './pages/Categorias/Maquinas/Serras';
+import Lixadeiras from './pages/Categorias/Maquinas/Lixadeiras';
+import Plainas from './pages/Categorias/Maquinas/Plainas';
 
 // Contextos
 import { AuthProvider } from "./contexts/AuthContext";
@@ -45,9 +50,16 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Endereço" element={<Endereço />} />
             <Route path="/Compras" element={<Compras />} />
 
+            {/* Máquinas */}
+            <Route path="/categorias/maquinas/furadeiras" element={<Furadeiras />} />
+            <Route path="/categorias/maquinas/serras" element={<Serras />} />
+            <Route path="/categorias/maquinas/lixadeiras" element={<Lixadeiras />} />
+            <Route path="/categorias/maquinas/plainas" element={<Plainas />} />
+
+
           </Routes>
         </CarrinhoProvider>
       </AuthProvider>
-    </BrowserRouter>
+    </BrowserRouter>''
   </StrictMode>
 );
