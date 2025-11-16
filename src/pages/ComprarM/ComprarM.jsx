@@ -10,7 +10,7 @@ export default function Comprar() {
 
   const produto = {
     id: 4,
-    nome: "Cimento CSN CP II – 50 KG",
+    nome: "Cimento CSN CP II",
     preco: 40,
     imagem: Produto4,
   };

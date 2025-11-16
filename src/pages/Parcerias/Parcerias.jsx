@@ -76,7 +76,7 @@ export default function Parcerias() {
           Cimento CP II-32-50kg CSN
           </h4>
           <div className="produto_valor">
-            <p className="produto_preco">R$ 65,00</p>
+            <p className="produto_preco">R$ 40,00</p>
             <div className="btn-comprar">
               <Link to="/ComprarM"> <button className="btn-comprar1">Comprar</button></Link>
             </div>
