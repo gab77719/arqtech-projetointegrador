@@ -71,14 +71,14 @@ export default function Parcerias() {
 
       <div className="produtos_lista">
         <div className="produto">
-          <img src={Produto4} alt="Produto 1" className="produto_imagem" />
+          <img src={Produto4} alt="Produto 4" className="produto_imagem" />
           <h4 className="produto_nome">
           Cimento CP II-32-50kg CSN
           </h4>
           <div className="produto_valor">
             <p className="produto_preco">R$ 65,00</p>
             <div className="btn-comprar">
-              <button className="btn-comprar1">Comprar</button>
+              <Link to="/ComprarM"> <button className="btn-comprar1">Comprar</button></Link>
             </div>
           </div>
         </div>
