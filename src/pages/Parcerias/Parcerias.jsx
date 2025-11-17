@@ -137,10 +137,10 @@ export default function Parcerias() {
         <div className="produto">
           <img src={Produto9} alt="Produto 3" className="produto_imagem" />
           <h4 className="produto_nome">
-          Serra Tico-Tico GST 680 <br />
-           Professional 500W Bosch
+            Serra Tico-Tico GST-750 <br />
+            220v Bosch
           </h4>
-          <p className="produto_preco">R$ 395,99</p>
+          <p className="produto_preco">R$ 359,0</p>
           <div className="btn-comprar">
           <Link to="/ComprarM6"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
@@ -160,7 +160,7 @@ export default function Parcerias() {
           <div className="produto_valor">
             <p className="produto_preco">R$ 599,99</p>
             <div className="btn-comprar">
-              <button className="btn-comprar1">Comprar</button>
+            <Link to="/ComprarM7"> <button className="btn-comprar1">Comprar</button></Link>
             </div>
           </div>
         </div>

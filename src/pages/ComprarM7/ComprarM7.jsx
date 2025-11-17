@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
-import Produto9 from "../../assets/BoschP3.png";
+import Produto10 from "../../assets/DewaltP1.png";
 import { useCarrinho } from "../../contexts/CarrinhoContext";
 import Footer from "../../components/Footer/Footer";
 
@@ -9,10 +9,10 @@ export default function Comprar() {
   const { adicionarAoCarrinho } = useCarrinho();
 
   const produto = {
-    id: 9,
-    nome: "Serra Tico-Tico GST-750 220v Bosch",
-    preco: 359,
-    imagem: Produto9,
+    id: 10,
+    nome: "Pinador Brushless Dewalt 20v MAX",
+    preco: 3000,
+    imagem: Produto10,
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Comprar() {
           
             <div className="bg-white rounded-lg p-8 flex items-center justify-center">
               <img
-                src={Produto9}
+                src={Produto10}
                 alt={produto.nome}
                 className="w-full h-auto max-w-md object-contain"
               />
@@ -37,10 +37,10 @@ export default function Comprar() {
             {/* Informações principais */}
             <div className="border border-gray-700 rounded-lg p-8">
               <h1 className="text-2xl font-bold mb-2">{produto.nome}</h1>
-              <p className="text-gray-400 mb-6">Código: 57122</p>
+              <p className="text-gray-400 mb-6">Código: DCN680B</p>
 
               <div className="mb-8">
-                <span className="text-red-600 font-bold text-4xl">Bosch</span>
+                <span className="text-yellow-500 font-bold text-4xl">DeWalt</span>
               </div>
 
               <div className="mb-8">
@@ -76,11 +76,11 @@ export default function Comprar() {
               <div>
                 <h2 className="text-xl font-semibold mb-4">Segmentos:</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  Construção Civil / Marcenaria / Metalmecânica 
+                marcenaria / carpintaria / montagem de móveis
                   <br />
                   <strong>Aplicações:</strong>
                   <br />
-                  alvenaria / madeira / metal 
+                    fixação de molduras / fixação de acabamentos / montagem de móveis 
             
                 </p>
               </div>
@@ -90,8 +90,7 @@ export default function Comprar() {
                   Itens que acompanham:
                 </h2>
                 <p className="text-gray-300 leading-relaxed">
-                1 Serra Tico-Tico GST-750, 1 manual de instruções, 1 chave allen, 1 lâmina de serra, 1 protetor de cavacos, 1 maleta de transporte, 1 set de extração de pó.
-                Garantia 2 anos Bosch.
+                1 Pinador Brushless Dewalt 20v MAX , 1 manual de instruções, 1 presilha para cinto, 1 Liberador de bloqueios
                 </p>
               </div>
             </div>
@@ -102,23 +101,24 @@ export default function Comprar() {
             <h2 className="text-xl font-semibold mb-6">Descrição</h2>
             <div className="text-gray-300 leading-relaxed space-y-4">
               <p>
-                <strong>DESCRIÇÃO:</strong>A serra tico-tico Bosch GST 90 BE, com potência de 650 W, é versátil e possui motor de alto desempenho. 
-                Oferece ótimos resultados em cortes retos e curvos em diversos materiais com controle de velocidade eletrônico e ação pendular de 4 estágios. 
-                Para maior durabilidade e estabilidade de corte, a placa base de aço antitorção é reforçada com duas camadas de aço.
+                <strong>DESCRIÇÃO:</strong>O Pinador Brushless Dewalt 20v MAX Sem Baterias DCN680B é uma ferramenta projetada para atender às demandas de profissionais que buscam eficiência e praticidade em suas aplicações de fixação. 
+                Com um motor sem escovas, este pinador oferece um desempenho superior e uma vida útil prolongada, eliminando a necessidade de manutenção constante. Ideal para uso em obras, marcenarias e reformas, o DCN680B é capaz de realizar uma variedade de tarefas, desde a fixação de molduras até o trabalho com painéis de madeira, proporcionando precisão e agilidade. 
               </p>
 
               <p>
                 <strong>ESPECIFICAÇÕES TÉCNICAS:</strong>
-                - Embalagem: Maleta plástica
+                - Tecnologia: Motor Brushless - Sem escovas de carvão. Maior durabilidade.
                 <br />
-                - Fonte de Energia: Cabo
+                - Bateria e carregador: Não acompanha. Itens vendidos separadamente.
                 <br />
-                - Acabamento e composição da ferramenta: Poliamida, metal e elastômero
+                - Voltagem: 20v MAX
                 <br />
-                - Acabamento do Material do cabo: Borracha e cobre
+                - Tipo de prego: 18 Ga brad 5/8’’ ~ 2-1/8’’ / 16 mm ~ 54 mm
                 <br />
-                - Potência da ferramenta: 650W
+                - Capacidade: 110 Pregos
                 <br />
+                - Embalagem: Caixa de papelão
+          
               </p>
             </div>
           </div>

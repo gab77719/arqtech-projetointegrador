@@ -76,11 +76,11 @@ export default function Comprar() {
               <div>
                 <h2 className="text-xl font-semibold mb-4">Segmentos:</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  Construção Civil / Marmoraria /
+                  Construção Civil / Marcenaria / Metalurgia
                   <br />
                   <strong>Aplicações:</strong>
                   <br />
-                  alvenaria / madeira / metal / 
+                  alvenaria / madeira / metal 
             
                 </p>
               </div>

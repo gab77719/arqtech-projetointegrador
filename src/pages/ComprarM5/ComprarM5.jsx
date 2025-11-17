@@ -76,7 +76,7 @@ export default function Comprar() {
               <div>
                 <h2 className="text-xl font-semibold mb-4">Segmentos:</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  Construção Civil / Marmoraria /
+                  Construção Civil / Marcenaria / Metalurgia / Serralheria
                   <br />
                   <strong>Aplicações:</strong>
                   <br />
@@ -104,6 +104,7 @@ export default function Comprar() {
                 <strong>DESCRIÇÃO:</strong>A esmerilhadeira angular Bosch GWS 9-125 S possui um motor slim de 900 Watts de potência e é a solução ideal para realização de cortes e desbastes em qualquer tipo de materiais metálicos, como ferro e aço.
                  A ferramenta conta com capa de proteção com sistema de fixação por meio de parafuso, que garante que a capa não se desloque em caso de rompimento do disco, oferecendo mais segurança ao operador da ferramenta. 
                  Seu interruptor de acionamento na lateral da esmerilhadeira traz praticidade mesmo para trabalhos mais longos..
+                 
               </p>
             </div>
           </div>

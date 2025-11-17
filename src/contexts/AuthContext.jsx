@@ -1,21 +1,38 @@
-import { createContext, useContext, useState } from "react";
-import { isLogged, getUser } from "../lib/AuthHandler";
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { getStoredToken, getStoredUser } from '../lib/AuthHandler';
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
-    const initialLoggedState = isLogged();
-    const initialUserState = initialLoggedState ? getUser() : null;
+export function AuthProvider({ children }) {
+  const [logged, setLogged] = useState(false);
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-    const [logged, setLogged] = useState(initialLoggedState);
-    const [user, setUser] = useState(initialUserState);
+  useEffect(() => {
+    const token = getStoredToken();
+    const storedUser = getStoredUser();
 
-    return (    
-        <AuthContext.Provider value={{ logged, user, setLogged, setUser}}
-        >
-            {children}
-        </AuthContext.Provider>
-    );
+    if (token && storedUser) {
+      setLogged(true);
+      setUser(storedUser);
+    }
+    
+    setLoading(false);
+  }, []);
+
+  return (
+    <AuthContext.Provider value={{ logged, setLogged, user, setUser, loading }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }
 
-export const useAuth = () => useContext(AuthContext);
+export function useAuth() {
+  const context = useContext(AuthContext);
+  
+  if (!context) {
+    throw new Error('useAuth deve ser usado dentro de um AuthProvider');
+  }
+  
+  return context;
+}
