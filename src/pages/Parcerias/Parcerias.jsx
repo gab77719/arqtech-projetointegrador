@@ -116,21 +116,21 @@ export default function Parcerias() {
            550W 220V Bosch
           </h4>
           <div className="produto_valor">
-            <p className="produto_preco">R$ 299,99</p>
+            <p className="produto_preco">R$ 359,00</p>
             <div className="btn-comprar">
-              <button className="btn-comprar1">Comprar</button>
+            <Link to="/ComprarM4"> <button className="btn-comprar1">Comprar</button></Link>
             </div>
           </div>
         </div>
         <div className="produto">
           <img src={Produto8} alt="Produto 2" className="produto_imagem" />
           <h4 className="produto_nome">
-          Esmerilhadeira 7''-180 GWS-25-180 <br />
-          2500W 220V Bosch
+          Esmerilhadeira Bosch GWS <br />
+          9-125 S 900W eixo M14
           </h4>
-          <p className="produto_preco">R$ 399,99</p>
+          <p className="produto_preco">R$ 500,00</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+          <Link to="/ComprarM5"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
 
@@ -142,7 +142,7 @@ export default function Parcerias() {
           </h4>
           <p className="produto_preco">R$ 395,99</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+          <Link to="/ComprarM6"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
       </div>

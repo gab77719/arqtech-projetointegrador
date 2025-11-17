@@ -20,6 +20,9 @@ import Compras from "./pages/Compras/Compras";
 import ComprarM from "./pages/ComprarM/ComprarM";
 import ComprarM2 from "./pages/ComprarM2/ComprarM2";
 import ComprarM3 from "./pages/ComprarM3/ComprarM3";
+import ComprarM4 from "./pages/ComprarM4/ComprarM4";
+import ComprarM5 from "./pages/ComprarM5/ComprarM5";
+import ComprarM6 from "./pages/ComprarM6/ComprarM6";
 
 // Páginas de Categorias - Máquinas
 import Furadeiras from './pages/Categorias/Maquinas/Furadeiras';
@@ -55,6 +58,9 @@ createRoot(document.getElementById("root")).render(
             <Route path="/ComprarM" element={<ComprarM />} />
             <Route path="/ComprarM2" element={<ComprarM2 />} />
             <Route path="/ComprarM3" element={<ComprarM3 />} />
+            <Route path="/ComprarM4" element={<ComprarM4 />} />
+            <Route path="/ComprarM5" element={<ComprarM5 />} />
+            <Route path="/ComprarM6" element={<ComprarM6 />} />
 
             {/* Máquinas */}
             <Route path="/categorias/maquinas/furadeiras" element={<Furadeiras />} />
