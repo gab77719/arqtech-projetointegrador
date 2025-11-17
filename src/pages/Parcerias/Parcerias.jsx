@@ -85,22 +85,22 @@ export default function Parcerias() {
         <div className="produto">
           <img src={Produto5} alt="Produto 2" className="produto_imagem" />
           <h4 className="produto_nome">
-          Cimento CP II-40-50kg CSN
+          Cimento CP III-40-50kg CSN
           </h4>
-          <p className="produto_preco">R$ 79,99</p>
+          <p className="produto_preco">R$ 49,99</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+            <Link to="/ComprarM2"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
 
         <div className="produto">
           <img src={Produto6} alt="Produto 3" className="produto_imagem" />
           <h4 className="produto_nome">
-          Vergalão CA-50 12.5mm 12m - Reto
+            Vergalhão CA-50 32,0 mm 12 m - Reto S
           </h4>
-          <p className="produto_preco">R$ 119,99</p>
+          <p className="produto_preco">R$ 39,99</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+            <Link to="/ComprarM3"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
       </div>

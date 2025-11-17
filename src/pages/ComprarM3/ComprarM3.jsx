@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
-import Produto4 from "../../assets/image 46.png";
+import Produto6 from "../../assets/image 48.png";
 import { useCarrinho } from "../../contexts/CarrinhoContext";
 import Footer from "../../components/Footer/Footer";
 
@@ -9,10 +9,10 @@ export default function Comprar() {
   const { adicionarAoCarrinho } = useCarrinho();
 
   const produto = {
-    id: 4,
-    nome: "Cimento CSN CP II",
-    preco: 40,
-    imagem: Produto4,
+    id: 6,
+    nome: "Vergalhão - Reto S",
+    preco: 39.99,
+    imagem: Produto6,
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Comprar() {
             {/* Imagem do produto */}
             <div className="bg-white rounded-lg p-8 flex items-center justify-center">
               <img
-                src={Produto4}
+                src={Produto6}
                 alt={produto.nome}
                 className="w-full h-auto max-w-md object-contain"
               />
@@ -37,7 +37,7 @@ export default function Comprar() {
             {/* Informações principais */}
             <div className="border border-gray-700 rounded-lg p-8">
               <h1 className="text-2xl font-bold mb-2">{produto.nome}</h1>
-              <p className="text-gray-400 mb-6">Código: 16697</p>
+              <p className="text-gray-400 mb-6">Código: 7480</p>
 
               <div className="mb-8">
                 <span className="text-blue-500 font-bold text-4xl">CSN</span>
@@ -87,7 +87,7 @@ export default function Comprar() {
                   Aplicações:
                 </h2>
                 <p className="text-gray-300 leading-relaxed">
-                artefatos de cimento / blocos de concreto / lajes / pisos industriais / calçadas / fundações / argamassas de assentamento / revestimento / estruturas de concreto/
+                fundações / estruturas / concreto-massa / armado / pavimentos / obras/
                 </p>
               </div>
             </div>
@@ -98,23 +98,20 @@ export default function Comprar() {
             <h2 className="text-xl font-semibold mb-6">Descrição:</h2>
             <div className="text-gray-300 leading-relaxed space-y-4">
               <p>
-               são Compostos, produzidos a partir de silicatos de cálcio, alumínio e ferro, sulfato de cálcio, filler carbonático há também a baixa adição de escória de alto-forno, o que garante aos produtos resistências iniciais superiores e são indicados para a construção geral.
+               Os produtos laminados a quente apresentam sobre suas superfícies uma camada de óxido de ferro naturalmente formada durante o processo de produção.<br />
+               Com configuração geométrica de núcleo redondo especialmente projetada para maior aderência ao concreto e alta performance em equipamentos de Corte e Dobra, o vergalhão CSN50 foi desenvolvido por meio de altíssima tecnologia, atendendo plenamente as especificações para a categoria CA-50.
                 </p>
 
               <p>
                 <strong>ESPECIFICAÇÕES TÉCNICAS:</strong>
                 <br />
-                - Tipo: CP II-32
+                - Vergalhões: Diâmetro nominal de 6,3 mm a 32,0 mm;
                 <br />
-                - Embalagem: Saco de 50kg
+                - Fio máquina: Diâmetro nominal de 5,5 mm a 16,0 mm;
                 <br />
-                - Norma: NBR 16697
+                - Perfil laminado: Altura nominal de 100 mm a 530 mm.
                 <br />
-                - Versatilidade;
-                <br />
-                - Secagem rápida;
-                <br />
-                - Resistências iniciais superiores.
+                - Norma: ABNT NBR 7480
               </p>
             </div>
           </div>
