@@ -2,6 +2,7 @@ import './Sobre.css';
 import Logo from '../../public/Logo.png';
 import Dps from '../../assets/DpsS.png';
 
+
 export default function Sobre() {
     return (
         <section className='sobre-section'>
