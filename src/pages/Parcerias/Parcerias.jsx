@@ -15,7 +15,7 @@ import Produto7 from "../../assets/BoschP1.png";
 import Produto8 from "../../assets/BoschP2.png";
 import Produto9 from "../../assets/BoschP3.png";
 import Produto10 from "../../assets/DewaltP1.png";
-import Produto11 from "../../assets/DewaltP2.png";
+import Produto11 from "../../assets/chave-de-impacto.png";
 import Produto12 from "../../assets/DewaltP3.png";
 import { Link } from "react-router";
 
@@ -83,7 +83,7 @@ export default function Parcerias() {
           </div>
         </div>
         <div className="produto">
-          <img src={Produto5} alt="Produto 2" className="produto_imagem" />
+          <img src={Produto5} alt="Produto 5" className="produto_imagem" />
           <h4 className="produto_nome">
           Cimento CP III-40-50kg CSN
           </h4>
@@ -158,7 +158,7 @@ export default function Parcerias() {
            DCN680B DeWalt
           </h4>
           <div className="produto_valor">
-            <p className="produto_preco">R$ 599,99</p>
+            <p className="produto_preco">R$ 3000,00</p>
             <div className="btn-comprar">
             <Link to="/ComprarM7"> <button className="btn-comprar1">Comprar</button></Link>
             </div>
@@ -172,7 +172,7 @@ export default function Parcerias() {
           </h4>
           <p className="produto_preco">R$ 1299,99</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+            <Link to="/ComprarM8"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
 
@@ -182,9 +182,9 @@ export default function Parcerias() {
           Tesoura de Poda 20v Max <br />
           DCPR320B-B3 DeWalt
           </h4>
-          <p className="produto_preco">R$ 189,99</p>
+          <p className="produto_preco">R$ 1222,00</p>
           <div className="btn-comprar">
-            <button className="btn-comprar1">Comprar</button>
+          <Link to="/ComprarM9"> <button className="btn-comprar1">Comprar</button></Link>
           </div>
         </div>
       </div>

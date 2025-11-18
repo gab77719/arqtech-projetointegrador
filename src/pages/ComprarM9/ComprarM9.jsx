@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import Cabecalho from "../../components/Cabecalho";
-import Produto10 from "../../assets/DewaltP1.png";
+import Produto12 from "../../assets/DewaltP3.png";
 import { useCarrinho } from "../../contexts/CarrinhoContext";
 import Footer from "../../components/Footer/Footer";
 
@@ -9,10 +9,10 @@ export default function Comprar() {
   const { adicionarAoCarrinho } = useCarrinho();
 
   const produto = {
-    id: 10,
-    nome: "Pinador Brushless Dewalt 20v MAX",
-    preco: 3000,
-    imagem: Produto10,
+    id: 12,
+    nome: "Multi Ferramenta Oscilante Dewalt 20v MAX",
+    preco: 1222,
+    imagem: Produto12,
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Comprar() {
           
             <div className="bg-white rounded-lg p-8 flex items-center justify-center">
               <img
-                src={Produto10}
+                src={Produto12}
                 alt={produto.nome}
                 className="w-full h-auto max-w-md object-contain"
               />
@@ -37,10 +37,10 @@ export default function Comprar() {
             {/* Informações principais */}
             <div className="border border-gray-700 rounded-lg p-8">
               <h1 className="text-2xl font-bold mb-2">{produto.nome}</h1>
-              <p className="text-gray-400 mb-6">Código: DCN680B</p>
+              <p className="text-gray-400 mb-6">Código: DCS356B</p>
 
               <div className="mb-8">
-                <span className="text-yellow-500 font-bold text-4xl">DeWalt</span>
+                <span className="text-yellow-500 font-bold text-4xl">DeWALT</span>
               </div>
 
               <div className="mb-8">
@@ -76,11 +76,11 @@ export default function Comprar() {
               <div>
                 <h2 className="text-xl font-semibold mb-4">Segmentos:</h2>
                 <p className="text-gray-300 leading-relaxed">
-                marcenaria / carpintaria / montagem de móveis
+                  Construção civil / Marcenaria / Reforma / Manutenção
                   <br />
                   <strong>Aplicações:</strong>
                   <br />
-                    fixação de molduras / fixação de acabamentos / montagem de móveis 
+                    lixamentos / raspagens / madeira / metal / plástico / drywall 
             
                 </p>
               </div>
@@ -90,7 +90,7 @@ export default function Comprar() {
                   Itens que acompanham:
                 </h2>
                 <p className="text-gray-300 leading-relaxed">
-                1 Pinador Brushless Dewalt 20v MAX , 1 manual de instruções, 1 presilha para cinto, 1 Liberador de bloqueios
+                1Multi Ferramenta Oscilante 20V MAX, 1 lâmina de corte rápido para madeira, 1 adaptador universal para acessórios de outras marcas e o manual de instruções. 
                 </p>
               </div>
             </div>
@@ -101,8 +101,9 @@ export default function Comprar() {
             <h2 className="text-xl font-semibold mb-6">Descrição</h2>
             <div className="text-gray-300 leading-relaxed space-y-4">
               <p>
-                <strong>DESCRIÇÃO:</strong>O Pinador Brushless Dewalt 20v MAX Sem Baterias DCN680B é uma ferramenta projetada para atender às demandas de profissionais que buscam eficiência e praticidade em suas aplicações de fixação. 
-                Com um motor sem escovas, este pinador oferece um desempenho superior e uma vida útil prolongada, eliminando a necessidade de manutenção constante. Ideal para uso em obras, marcenarias e reformas, o DCN680B é capaz de realizar uma variedade de tarefas, desde a fixação de molduras até o trabalho com painéis de madeira, proporcionando precisão e agilidade. 
+                <strong>DESCRIÇÃO:</strong>A Multi Ferramenta Oscilante Dewalt 20v MAX DCS356B é uma solução versátil e robusta para profissionais e entusiastas do DIY que buscam eficiência e precisão em suas tarefas. 
+                Projetada para proporcionar um desempenho excepcional, esta ferramenta é ideal para uma variedade de aplicações, incluindo cortes, lixas e raspagens em materiais como madeira, drywall e metal.
+                O sistema de troca de acessórios sem chave permite uma troca rápida e fácil, aumentando a produtividade e a agilidade durante o trabalho.
               </p>
 
               <p>
@@ -113,9 +114,7 @@ export default function Comprar() {
                 <br />
                 - Voltagem: 20v MAX
                 <br />
-                - Tipo de prego: 18 Ga brad 5/8’’ ~ 2-1/8’’ / 16 mm ~ 54 mm
-                <br />
-                - Capacidade: 110 Pregos
+                - Velocidade mecânica: 3
                 <br />
                 - Embalagem: Caixa de papelão
           

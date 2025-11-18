@@ -37,7 +37,7 @@ export default function Comprar() {
             {/* Informações principais */}
             <div className="border border-gray-700 rounded-lg p-8">
               <h1 className="text-2xl font-bold mb-2">{produto.nome}</h1>
-              <p className="text-gray-400 mb-6">Código: 57122</p>
+              <p className="text-gray-400 mb-6">Código: 84672</p>
 
               <div className="mb-8">
                 <span className="text-blue-500 font-bold text-4xl">Bosch</span>
