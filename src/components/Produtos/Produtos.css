@@ -57,8 +57,7 @@
 }
 
 .btn-mais button:hover{
-    border: 2px solid white;
-    
+    background-color: #1b1f3a;
 }
 
 .btn-comprar button:hover{

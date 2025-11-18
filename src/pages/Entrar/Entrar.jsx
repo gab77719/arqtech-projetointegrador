@@ -106,9 +106,7 @@ export default function Entrar() {
 
   return (
     <>
-      <div className='logo'>
-        <Link to="/"><img src={Logo} alt="Logo" /></Link>
-      </div>
+    
 
       <div className="container-entrar">
         <div className='entrar'>
