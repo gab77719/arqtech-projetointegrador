@@ -12,6 +12,9 @@ import Produto6 from "../../assets/image 48.png";
 import Produto7 from "../../assets/sacodeareia.png";
 import Produto8 from "../../assets/sacodebrita.png";
 import Produto9 from "../../assets/votomassa.png";
+import Produto10 from "../../assets/enxada.png";
+import Produto11 from "../../assets/pá.png";
+import Produto12 from "../../assets/carrinho.png";
 import Logo from '../../public/Logo.png';
 import makita1 from "../../assets/makita1.png";
 import CSN1 from "../../assets/CSN1.png";
@@ -102,6 +105,46 @@ export default function Materiais() {
                         <p className="produto_preco">R$ 32,99</p>
                         <div className="btn-comprar">
                          <Link to="/Materiais3"> <button className="btn-comprar1">Comprar</button></Link>
+                        </div>
+                      </div>
+                      
+                      </div>
+                  </section>
+                  <section className="produtos">
+                    <div className="produtos_lista">
+                      
+                      <div className="produto">
+                        <img src={Produto10} alt="Produto 10" className="produto_imagem" />
+                        <h4 className="produto_nome">
+                          Enxada 
+                        </h4>
+                        <div className="produto_valor">
+                          <p className="produto_preco">R$ 30,00</p>
+                          <div className="btn-comprar">
+                           <button className="btn-comprar1">Comprar</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="produto">
+                        <img src={Produto11} alt="Produto 2" className="produto_imagem" />
+                        <h4 className="produto_nome">
+                          Pá
+                        </h4>
+                        <p className="produto_preco">R$ 40,00</p>
+                        <div className="btn-comprar">
+                         <button className="btn-comprar1">Comprar</button>
+                        </div>
+                      </div>
+              
+                      <div className="produto">
+                        <img src={Produto12} alt="Produto 9" className="produto_imagem" />
+                        <h4 className="produto_nome">
+                        Carrinho de mão
+                        </h4>
+                        <p className="produto_preco">R$ 299,99</p>
+                        <div className="btn-comprar">
+                         <button className="btn-comprar1">Comprar</button>
                         </div>
                       </div>
                       
