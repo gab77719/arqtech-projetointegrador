@@ -21,9 +21,7 @@ import DeWalt1 from "../../assets/DeWalt1.png";
 export default function Materiais() {   
     return (
      <>           
-        <header>
-            <Cabecalho />
-        </header>
+       
             <div className='banner'>
             <img src={Ferramenta} alt="banner" className="cabecalho_banner"></img>
             </div>

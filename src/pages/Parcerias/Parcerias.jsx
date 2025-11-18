@@ -22,9 +22,7 @@ import { Link } from "react-router";
 export default function Parcerias() {
   return (
     <>
-      <header>
-        <Cabecalho />
-      </header>
+   
       {/* Makita */}
       <img src={Makita} alt="Makita" className="mt-40" />
 

@@ -67,9 +67,7 @@ export default function Conta() {
 
   return (
     <>
-      <header>
-        <Cabecalho />
-      </header>
+      
       <div className="container-conta mt-20">
         <section>
           <div className="p-20 ">

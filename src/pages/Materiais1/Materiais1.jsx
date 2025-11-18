@@ -17,10 +17,7 @@ export default function Comprar() {
 
   return (
     <>
-      <header>
-        <Cabecalho />
-      </header>
-
+      
       <div className="min-h-screen text-white p-10 mt-30">
         <div className="max-w-7xl mx-auto">
           {/* --- Seção principal --- */}

@@ -6,12 +6,13 @@ import { IoIosSearch } from "react-icons/io";
 import { FaAngleDown } from 'react-icons/fa';
 import { doLogout } from '../../lib/AuthHandler';
 import { useAuth } from '../../contexts/AuthContext';
+import {useState} from 'react'  
 
 
 export default function Cabecalho() {
   const { logged, setLogged, user, setUser } = useAuth();
   const [menuOpen, setMenuOpen] = React.useState(false);
-  const navigate = useNavigate(); 
+
 
   const handleLogout = () => {
     doLogout();
@@ -28,6 +29,25 @@ export default function Cabecalho() {
     }
   };
 
+  const[query,setQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const termo =query.toLowerCase().trim();
+
+    if (termo.includes("serra de marmore")){
+      navigate("/Comprar");
+    }  else if (termo.includes("serra")){
+      navigate("/Comprar");}
+      else if (termo.includes("martelete")){
+      navigate("/Comprar2");
+    }else if (termo.includes("parafusadeira")){
+    navigate("/Comprar3");
+    }else {
+      alert("Nenhum resultado encontrado")
+    }
+  };
   return (
     <>
       <header className="cabecalho">
@@ -35,16 +55,18 @@ export default function Cabecalho() {
           <img src={Logo} alt="Logo da empresa" className="cabecalho__logo" />
         </Link>
 
-        <div className="cabecalho__search">
+        <form onSubmit={handleSearch} className="cabecalho__search">
           <input
             type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
             placeholder="Pesquisar..."
             className="search-bar"
           />
           <button className="search-button">
             <IoIosSearch />
           </button>
-        </div>
+        </form>
 
         <div className="cabecalho__actions">
           {logged ? (

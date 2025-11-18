@@ -28,6 +28,7 @@ import ComprarM8 from "./pages/ComprarM8/ComprarM8";
 import ComprarM9 from "./pages/ComprarM9/ComprarM9";
 import Materiais1 from "./pages/Materiais1/materiais1";
 import Materiais2 from "./pages/Materiais2/Materiais2";
+import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
 
 // Páginas de Categorias - Máquinas
@@ -44,8 +45,10 @@ import { CarrinhoProvider } from "./contexts/CarrinhoContext";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/arqtech-projetointegrador">
+    
       {/* Contextos globais */}
       <AuthProvider>
+      <Cabecalho />
         <CarrinhoProvider>
           <Routes>
             <Route path="/" index element={<Home />} />

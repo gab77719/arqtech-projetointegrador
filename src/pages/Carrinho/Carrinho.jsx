@@ -57,10 +57,6 @@ export default function Carrinho() {
 
   return (
     <>
-      <header>
-        <Cabecalho />
-      </header>
-
       <div className="p-10 mt-20">
         <h1 className="text-3xl font-bold mb-6">Carrinho de compras</h1>
 

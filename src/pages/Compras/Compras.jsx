@@ -29,9 +29,7 @@ export default function Compras() {
   return (
 
     <>
-          <header>
-            <Cabecalho />
-          </header>
+          
   
    
     <div className="compras-container">

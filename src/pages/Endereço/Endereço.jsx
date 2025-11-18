@@ -7,7 +7,7 @@ import { Link } from "react-router";
 export default function Endereço() {
   return (
     <>
-      <Cabecalho />
+      
 
       <h1 className=" text-3xl mt-22 flex justify-center">Adicione um endereço</h1>
 

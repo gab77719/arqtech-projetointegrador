@@ -7,9 +7,7 @@ import Footer from "../../components/Footer/Footer";
 export default function Pagamentos() {
   return (
     <>
-      <header>
-        <Cabecalho />
-      </header>
+     
       <div className="Pagamentos">
         <div className="container-pagamento">
           <div className="metodo-pagamento">
