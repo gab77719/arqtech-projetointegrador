@@ -21,22 +21,20 @@ export default function Furadeiras() {
       nome: "Furadeira Makita 600W",
       preco: "R$ 369,90",
       imagem: "https://m.media-amazon.com/images/I/71MfXTu6F4L._AC_SL1500_.jpg",
-      descricao: "Excelente desempenho com empunhadura ergonômica e mandril metálico.",
+      descricao: "Excelente desempenho com empunhadura ergonômica.",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-5">
+    <div className="min-h-screen bg-black py-10 px-5">
       <div className="max-w-6xl mx-auto">
-        {/* Título */}
         <div className="mb-10 text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Furadeiras</h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-white text-lg pt-23">
             Escolha a melhor furadeira para seu projeto!
           </p>
         </div>
 
-        {/* Lista de produtos */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {produtos.map((item) => (
             <div
@@ -52,9 +50,7 @@ export default function Furadeiras() {
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">
                   {item.nome}
                 </h2>
-                <p className="text-gray-600 text-sm mb-3">
-                  {item.descricao}
-                </p>
+                <p className="text-gray-600 text-sm mb-3">{item.descricao}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-bold text-green-600">
                     {item.preco}
@@ -66,13 +62,6 @@ export default function Furadeiras() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Rodapé da seção */}
-        <div className="text-center mt-16">
-          <p className="text-gray-500 text-sm">
-            *Os preços e disponibilidade estão sujeitos a alterações sem aviso prévio.
-          </p>
         </div>
       </div>
     </div>

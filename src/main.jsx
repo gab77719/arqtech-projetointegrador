@@ -31,11 +31,37 @@ import Materiais2 from "./pages/Materiais2/Materiais2";
 import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
 
-// Páginas de Categorias - Máquinas
+// CATEGORIAS - MÁQUINAS
+// ==========================================
 import Furadeiras from './pages/Categorias/Maquinas/Furadeiras';
 import Serras from './pages/Categorias/Maquinas/Serras';
 import Lixadeiras from './pages/Categorias/Maquinas/Lixadeiras';
 import Plainas from './pages/Categorias/Maquinas/Plainas';
+
+
+// ==========================================
+// CATEGORIAS - FIXAÇÃO
+// ==========================================
+import Parafusos from './pages/Categorias/Fixacao/Parafusos';
+import Buchas from './pages/Categorias/Fixacao/Buchas';
+import Pregos from './pages/Categorias/Fixacao/Pregos';
+import PorcasArruelas from './pages/Categorias/Fixacao/Porcas';
+
+// ==========================================
+// CATEGORIAS - HIDRÁULICA
+// ==========================================
+import Tubos from './pages/Categorias/Hidraulica/Tubos';
+import Conexoes from './pages/Categorias/Hidraulica/Conexoes';
+import Registros from './pages/Categorias/Hidraulica/Registros';
+import Valvulas from './pages/Categorias/Hidraulica/Valvulas';
+
+// ==========================================
+// CATEGORIAS - REVESTIMENTO
+// ==========================================
+import Pisos from './pages/Categorias/Revestimento/Pisos';
+import Azulejos from './pages/Categorias/Revestimento/Azulejos';
+import Porcelanatos from './pages/Categorias/Revestimento/Porcelanatos';
+import Pastilhas from './pages/Categorias/Revestimento/Pastilhas';
 
 // Contextos
 import { AuthProvider } from "./contexts/AuthContext";
@@ -43,12 +69,14 @@ import { CarrinhoProvider } from "./contexts/CarrinhoContext";
 
 
 createRoot(document.getElementById("root")).render(
+
+  
   <StrictMode>
     <BrowserRouter basename="/arqtech-projetointegrador">
-    
+
       {/* Contextos globais */}
       <AuthProvider>
-      <Cabecalho />
+        <Cabecalho />
         <CarrinhoProvider>
           <Routes>
             <Route path="/" index element={<Home />} />
@@ -77,12 +105,36 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Materiais2" element={<Materiais2 />} />
             <Route path="/Materiais3" element={<Materiais3 />} />
 
-            {/* Máquinas */}
-            <Route path="/categorias/maquinas/furadeiras" element={<Furadeiras />} />
-            <Route path="/categorias/maquinas/serras" element={<Serras />} />
-            <Route path="/categorias/maquinas/lixadeiras" element={<Lixadeiras />} />
-            <Route path="/categorias/maquinas/plainas" element={<Plainas />} />
+            {/* CATEGORIAS - MÁQUINAS */}
+            {/* ========================================== */}
+            <Route path="/categoria/maquinas/furadeiras" element={<Furadeiras />} />
+            <Route path="/categoria/maquinas/serras" element={<Serras />} />
+            <Route path="/categoria/maquinas/lixadeiras" element={<Lixadeiras />} />
+            <Route path="/categoria/maquinas/plainas" element={<Plainas />} />
 
+            {/* ========================================== */}
+            {/* CATEGORIAS - FIXAÇÃO */}
+            {/* ========================================== */}
+            <Route path="/categoria/fixacao/parafusos" element={<Parafusos />} />
+            <Route path="/categoria/fixacao/buchas" element={<Buchas />} />
+            <Route path="/categoria/fixacao/pregos" element={<Pregos />} />
+            <Route path="/categoria/fixacao/porcas" element={<PorcasArruelas />} />
+
+            {/* ========================================== */}
+            {/* CATEGORIAS - HIDRÁULICA */}
+            {/* ========================================== */}
+            <Route path="/categoria/hidraulica/tubos" element={<Tubos />} />
+            <Route path="/categoria/hidraulica/conexoes" element={<Conexoes />} />
+            <Route path="/categoria/hidraulica/registros" element={<Registros />} />
+            <Route path="/categoria/hidraulica/valvulas" element={<Valvulas />} />
+
+            {/* ========================================== */}
+            {/* CATEGORIAS - REVESTIMENTO */}
+            {/* ========================================== */}
+            <Route path="/categoria/revestimento/pisos" element={<Pisos />} />
+            <Route path="/categoria/revestimento/azulejos" element={<Azulejos />} />
+            <Route path="/categoria/revestimento/porcelanatos" element={<Porcelanatos />} />
+            <Route path="/categoria/revestimento/pastilhas" element={<Pastilhas />} />
 
           </Routes>
         </CarrinhoProvider>
