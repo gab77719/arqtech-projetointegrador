@@ -6,12 +6,14 @@ import { IoIosSearch } from "react-icons/io";
 import { FaAngleDown } from 'react-icons/fa';
 import { doLogout } from '../../lib/AuthHandler';
 import { useAuth } from '../../contexts/AuthContext';
-import {useState} from 'react'  
+import { useState } from 'react';
 
 
 export default function Cabecalho() {
   const { logged, setLogged, user, setUser } = useAuth();
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const navigate = useNavigate();
+  const [searchText, setSearchText] = React.useState("");
 
 
   const handleLogout = () => {
@@ -19,35 +21,35 @@ export default function Cabecalho() {
     setLogged(false);
     setUser(null);
     setMenuOpen(false);
-    navigate('/'); 
+    navigate('/');
   };
 
   const handleCategoriaChange = (e) => {
     const value = e.target.value;
     if (value) {
-      navigate(value); 
+      navigate(value);
     }
   };
 
-  const[query,setQuery] = useState('');
-  const navigate = useNavigate();
+  const handleSearch = async () => {
+    if (!searchText.trim()) return;
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const termo =query.toLowerCase().trim();
+    try {
+      const response = await fetch(`http://localhost:8000/produtos/search?nome=${searchText}`);
+      const produto = await response.json();
 
-    if (termo.includes("serra de marmore")){
-      navigate("/Comprar");
-    }  else if (termo.includes("serra")){
-      navigate("/Comprar");}
-      else if (termo.includes("martelete")){
-      navigate("/Comprar2");
-    }else if (termo.includes("parafusadeira")){
-    navigate("/Comprar3");
-    }else {
-      alert("Nenhum resultado encontrado")
+      if (!response.ok) {
+        alert("Produto não encontrado!");
+        return;
+      }
+
+      navigate(`/Produto/${produto.id}`);
+
+    } catch (error) {
+      console.error("Erro na busca:", error);
     }
   };
+
   return (
     <>
       <header className="cabecalho">
@@ -55,18 +57,19 @@ export default function Cabecalho() {
           <img src={Logo} alt="Logo da empresa" className="cabecalho__logo" />
         </Link>
 
-        <form onSubmit={handleSearch} className="cabecalho__search">
+        <div className="cabecalho__search">
           <input
             type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
             placeholder="Pesquisar..."
             className="search-bar"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()}
           />
-          <button className="search-button">
+          <button className="search-button" onClick={handleSearch}>
             <IoIosSearch />
           </button>
-        </form>
+        </div>
 
         <div className="cabecalho__actions">
           {logged ? (

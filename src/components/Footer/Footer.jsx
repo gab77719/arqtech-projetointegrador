@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
     <footer className="footer">
-      <div className="logos-footer">
+      <div className="logo-footer">
         <img src={Logo} alt="Arqtech" />    
         </div>
       <div className="contatos">

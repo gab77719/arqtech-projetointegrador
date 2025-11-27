@@ -30,6 +30,9 @@ import Materiais1 from "./pages/Materiais1/materiais1";
 import Materiais2 from "./pages/Materiais2/Materiais2";
 import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
+import Produto from "./pages/Produto/produto";
+
+
 
 // CATEGORIAS - MÁQUINAS
 // ==========================================
@@ -104,6 +107,8 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Materiais1" element={<Materiais1 />} />
             <Route path="/Materiais2" element={<Materiais2 />} />
             <Route path="/Materiais3" element={<Materiais3 />} />
+            <Route path="/Produto/:id" element={<Produto />} /> 
+           
 
             {/* CATEGORIAS - MÁQUINAS */}
             {/* ========================================== */}
@@ -135,6 +140,9 @@ createRoot(document.getElementById("root")).render(
             <Route path="/categoria/revestimento/azulejos" element={<Azulejos />} />
             <Route path="/categoria/revestimento/porcelanatos" element={<Porcelanatos />} />
             <Route path="/categoria/revestimento/pastilhas" element={<Pastilhas />} />
+
+          
+
 
           </Routes>
         </CarrinhoProvider>
