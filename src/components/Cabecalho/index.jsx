@@ -38,12 +38,13 @@ export default function Cabecalho() {
       const response = await fetch(`http://localhost:8000/produtos/search?nome=${searchText}`);
       const produto = await response.json();
 
+     
       if (!response.ok) {
         alert("Produto não encontrado!");
         return;
       }
 
-      navigate(`/Produto/${produto.id}`);
+   navigate(`/Produto/${produto.id}`);
 
     } catch (error) {
       console.error("Erro na busca:", error);

@@ -27,7 +27,8 @@ export default function Comprar() {
     return <div>Carregando...</div>;
   }
 
-  const imagemProduto = produto.capa || productPlaceholder;
+  const imagemProduto = produto.imagem || productPlaceholder;
+
 
   return (
     <>
@@ -35,7 +36,7 @@ export default function Comprar() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <div>
-              <img src={imagemProduto} alt={produto.nome} />
+            <img src={imagemProduto} alt={produto.nome} />
             </div>
             <div>
               <h1 className="text-3xl font-bold">{produto.nome}</h1>
