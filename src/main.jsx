@@ -30,7 +30,7 @@ import Materiais1 from "./pages/Materiais1/materiais1";
 import Materiais2 from "./pages/Materiais2/Materiais2";
 import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
-import Produto from "./pages/Produto/produto";
+import Produto from "./pages/Produto/Produto";
 
 
 

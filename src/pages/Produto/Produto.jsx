@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { useCarrinho } from "../../contexts/CarrinhoContext";
 import Footer from "../../components/Footer/Footer";
 import productPlaceholder from "../../assets/product-placeholder.jpg";
