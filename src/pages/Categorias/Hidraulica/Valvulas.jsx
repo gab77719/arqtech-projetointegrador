@@ -70,7 +70,7 @@ export default function Valvulas() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 text-center">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">Válvulas</h1>
-            <p className="text-white text-lg pt-3">
+            <p className="text-white text-lg pt-3 mt-10">
               Controle e segurança para sistemas hidráulicos
             </p>
           </div>

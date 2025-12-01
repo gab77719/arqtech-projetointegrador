@@ -1,66 +1,76 @@
+import lixadeiraorbital from "../../../assets/lixadeiraorbital.webp";
+import lixadeiramakita from "../../../assets/lixadeiramakita.webp";
+import lixadeirabosch from "../../../assets/lixadeirabosch.webp";
+import lixadeiraparedes from "../../../assets/lixadeiraparedes.webp";
+import lixadeirablackecker from "../../../assets/lixadeirablackdecker.png";
+import lixadeiraryobi from "../../../assets/lixadeiraryobi.jpg";
+import lixadeirastanley from "../../../assets/lixadeirastanley.jpg";
+import retifica from "../../../assets/retifica.jpg";
+import pneumatica from "../../../assets/pneumatica.webp";
+
 export default function Lixadeiras() {
   const produtos = [
     {
       id: 1,
       nome: "Lixadeira Orbital Bosch 250W",
       preco: "R$ 189,90",
-      imagem: "https://m.media-amazon.com/images/I/71vqvW5HXHL._AC_SL1500_.jpg",
+      imagem: lixadeirabosch,
       descricao: "Acabamento suave em superfícies planas.",
     },
     {
       id: 2,
       nome: "Lixadeira de Cinta Makita 850W",
       preco: "R$ 549,00",
-      imagem: "https://m.media-amazon.com/images/I/61y7JCYpRdL._AC_SL1000_.jpg",
+      imagem: lixadeiramakita,
       descricao: "Remoção rápida de material em grandes áreas.",
     },
     {
       id: 3,
       nome: "Lixadeira Roto Orbital DeWalt 300W",
       preco: "R$ 279,90",
-      imagem: "https://m.media-amazon.com/images/I/71BWN1KXPfL._AC_SL1500_.jpg",
+      imagem: lixadeiraorbital,
       descricao: "Movimento duplo para acabamento profissional.",
     },
     {
       id: 4,
       nome: "Lixadeira de Parede Einhell 600W",
       preco: "R$ 399,90",
-      imagem: "https://m.media-amazon.com/images/I/61Zk1j3bJDL._AC_SL1500_.jpg",
+      imagem: lixadeiraparedes,
       descricao: "Ideal para lixamento de paredes e tetos.",
     },
     {
       id: 5,
       nome: "Lixadeira Angular Black & Decker 200W",
       preco: "R$ 159,90",
-      imagem: "https://m.media-amazon.com/images/I/61Xk1j3bJDL._AC_SL1500_.jpg",
+      imagem: lixadeirablackecker,
       descricao: "Compacta e fácil de manusear em cantos.",
     },
     {
       id: 6,
       nome: "Lixadeira de Disco Ryobi 400W",
       preco: "R$ 329,90",
-      imagem: "https://m.media-amazon.com/images/I/61Qk1j3bJDL._AC_SL1500_.jpg",
+      imagem: lixadeiraryobi,
       descricao: "Perfeita para desbaste e acabamento em madeira.",
     },
     {
       id: 7,
       nome: "Lixadeira de Fita Stanley 700W",
       preco: "R$ 459,90",
-      imagem: "https://m.media-amazon.com/images/I/61J1j3bJDL._AC_SL1500_.jpg",
+      imagem: lixadeirastanley,
       descricao: "Alta performance para trabalhos pesados.",
     },
     {
       id: 8,
       nome: "Lixadeira Manual Dremel 130W",
       preco: "R$ 219,90",
-      imagem: "https://m.media-amazon.com/images/I/61-6nUQtrgL._AC_SL1500_.jpg",
+      imagem: retifica,
       descricao: "Detalhes precisos em pequenos projetos.",
     },
     {
       id: 9,
       nome: "Lixadeira Pneumática Industrial",
       preco: "R$ 599,90",
-      imagem: "https://m.media-amazon.com/images/I/71MfXTu6F4L._AC_SL1500_.jpg",
+      imagem: pneumatica,
       descricao: "Potência e durabilidade para uso contínuo.",
     }
   ];

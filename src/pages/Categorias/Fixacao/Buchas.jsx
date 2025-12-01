@@ -1,66 +1,76 @@
+import buchas6 from "../../../assets/buchas6.jpg";
+import buchas8 from "../../../assets/buchas8.webp";
+import buchaquimica from "../../../assets/buchaquimica.jpg";
+import buchas10 from "../../../assets/buchas10.webp"; 
+import bucham8 from "../../../assets/bucham8.webp";
+import buchanylon6mm from "../../../assets/buchanylon6mm.jpg";
+import buchas5 from "../../../assets/buchas5.webp";
+import buchadry from "../../../assets/buchadry.jpg";
+import buchas14 from "../../../assets/buchas14.webp";
+
 export default function Buchas() {
     const produtos = [
       {
         id: 1,
         nome: "Bucha de Nylon S6 100un",
         preco: "R$ 12,90",
-        imagem: "https://images.tcdn.com.br/img/img_prod/650381/bucha_nylon_s6_com_100_unidades_fischer_1531_1_20201210153528.jpg",
+        imagem: buchas6,
         descricao: "Para fixação em alvenaria e concreto.",
       },
       {
         id: 2,
         nome: "Bucha de Expansão S8 50un",
         preco: "R$ 18,50",
-        imagem: "https://m.media-amazon.com/images/I/51wZqXXqnUL._AC_SL1000_.jpg",
+        imagem: buchas8,
         descricao: "Alta resistência para cargas pesadas.",
       },
       {
         id: 3,
         nome: "Bucha Química 300ml",
         preco: "R$ 45,90",
-        imagem: "https://m.media-amazon.com/images/I/61YqE4R7MNL._AC_SL1500_.jpg",
+        imagem: buchaquimica,
         descricao: "Fixação permanente em concreto.",
       },
       {
         id: 4,
         nome: "Bucha S10 Fisher 50un",
         preco: "R$ 16,90",
-        imagem: "https://m.media-amazon.com/images/I/61rWC5f9YfL._AC_SL1500_.jpg",
+        imagem: buchas10,
         descricao: "Bucha universal para diversos materiais.",
       },
       {
         id: 5,
         nome: "Bucha Metálica M8 100un",
         preco: "R$ 34,50",
-        imagem: "https://m.media-amazon.com/images/I/51bGqZvKDyL._AC_SL1000_.jpg",
+        imagem: bucham8,
         descricao: "Extra resistente para fixações industriais.",
       },
       {
         id: 6,
         nome: "Bucha Duopower S12 25un",
         preco: "R$ 28,90",
-        imagem: "https://m.media-amazon.com/images/I/61nMxlQoA7L._AC_SL1500_.jpg",
+        imagem: buchanylon6mm,
         descricao: "Tecnologia bi-material de alta performance.",
       },
       {
         id: 7,
         nome: "Bucha Plástica S5 200un",
         preco: "R$ 10,90",
-        imagem: "https://m.media-amazon.com/images/I/71pE8YvKZoL._AC_SL1500_.jpg",
+        imagem: buchas5,
         descricao: "Ideal para fixações leves em drywall.",
       },
       {
         id: 8,
         nome: "Bucha para Drywall 50un",
         preco: "R$ 22,50",
-        imagem: "https://m.media-amazon.com/images/I/61T9ZvVqHhL._AC_SL1500_.jpg",
+        imagem: buchadry,
         descricao: "Fixação segura em placas de gesso.",
       },
       {
         id: 9,
         nome: "Bucha S14 Fischer 20un",
         preco: "R$ 30,90",
-        imagem: "https://m.media-amazon.com/images/I/71LvkXqzKiL._AC_SL1500_.jpg",
+        imagem: buchas14,
         descricao: "Para cargas pesadas em concreto e alvenaria.",
       },
     ];
@@ -70,7 +80,7 @@ export default function Buchas() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 text-center">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">Buchas</h1>
-            <p className="text-white text-lg pt-3">
+            <p className="text-white text-lg pt-3 mt-10">
               Fixação confiável para alvenaria, concreto e mais
             </p>
           </div>

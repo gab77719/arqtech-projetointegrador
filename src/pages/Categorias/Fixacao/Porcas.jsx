@@ -72,7 +72,7 @@ export default function PorcasArruelas() {
             <h1 className="text-4xl font-bold text-gray-800 mb-2">
               Porcas e Arruelas
             </h1>
-            <p className="text-white text-lg pt-3">
+            <p className="text-white text-lg pt-3 mt-10">
               Componentes essenciais para fixações perfeitas
             </p>
           </div>

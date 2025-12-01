@@ -70,7 +70,7 @@ export default function Conexoes() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 text-center">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">Conexões</h1>
-            <p className="text-white text-lg pt-3">
+            <p className="text-white text-lg pt-3 mt-10">
               Soluções completas para sistemas hidráulicos
             </p>
           </div>

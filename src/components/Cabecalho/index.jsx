@@ -95,7 +95,6 @@ export default function Cabecalho() {
                 {menuOpen && (
                   <div className='dropdownMenu'>
                     <Link to="/Conta">Meu perfil</Link>
-                    <Link to="/Notificacoes">Notificações</Link>
                     <button onClick={handleLogout}>Sair</button>
                   </div>
                 )}

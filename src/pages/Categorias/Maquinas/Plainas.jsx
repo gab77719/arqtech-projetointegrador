@@ -1,66 +1,76 @@
+import plainabosch from "../../../assets/plainabosch.webp";
+import plainamakita from "../../../assets/plainamakita.webp";
+import plainadewalt from "../../../assets/plainadewalt.webp";
+import plainablackdecker from "../../../assets/plainablackdecker.jpg";
+import plainastanley from "../../../assets/plainastanley.jpg";
+import plainaryobi from "../../../assets/plainaryobi.jpeg";
+import plainaeinhell from "../../../assets/plainaeinhell.webp";
+import plainahitachi from "../../../assets/plainahitachi.webp";
+import plainadremel from "../../../assets/plainadremel.webp";
+
 export default function Plainas() {
   const produtos = [
     {
       id: 1,
       nome: "Plaina Elétrica Bosch 650W",
       preco: "R$ 329,90",
-      imagem: "https://m.media-amazon.com/images/I/61nMxlQoA7L._AC_SL1500_.jpg",
+      imagem: plainabosch,
       descricao: "Profundidade de corte regulável para madeira.",
     },
     {
       id: 2,
       nome: "Plaina Manual Makita 82mm",
       preco: "R$ 379,00",
-      imagem: "https://m.media-amazon.com/images/I/61rWC5f9YfL._AC_SL1500_.jpg",
+      imagem: plainamakita,
       descricao: "Largura de 82mm para trabalhos precisos.",
     },
     {
       id: 3,
       nome: "Plaina DeWalt 750W",
       preco: "R$ 419,90",
-      imagem: "https://m.media-amazon.com/images/I/71pE8YvKZoL._AC_SL1500_.jpg",
+      imagem: plainadewalt,
       descricao: "Potência e durabilidade para uso intensivo.",
     },
     {
       id: 4,
       nome: "Plaina Black & Decker 600W",
       preco: "R$ 289,90",
-      imagem: "https://m.media-amazon.com/images/I/51bGqZvKDyL._AC_SL1000_.jpg",
+      imagem: plainablackdecker,
       descricao: "Compacta e fácil de manusear.",
     },
     {
       id: 5,
       nome: "Plaina Stanley 700W",
       preco: "R$ 359,90",
-      imagem: "https://m.media-amazon.com/images/I/61T9ZvVqHhL._AC_SL1500_.jpg",
+      imagem: plainastanley,
       descricao: "Ideal para nivelar e alisar superfícies de madeira.",
     },
     {
       id: 6,
       nome: "Plaina Ryobi 650W",
       preco: "R$ 339,90",
-      imagem: "https://m.media-amazon.com/images/I/51wZqXXqnUL._AC_SL1000_.jpg",
+      imagem: plainaryobi,
       descricao: "Desempenho confiável com ajuste de profundidade.",
     },
     {
       id: 7,
       nome: "Plaina Einhell 600W",
       preco: "R$ 309,90",
-      imagem: "https://m.media-amazon.com/images/I/61nMxlQoA7L._AC_SL1500_.jpg",
+      imagem: plainaeinhell,
       descricao: "Perfeita para trabalhos de carpintaria leves.",
     },
     {
       id: 8,
       nome: "Plaina Hitachi 700W",
       preco: "R$ 389,90",
-      imagem: "https://m.media-amazon.com/images/I/61rWC5f9YfL._AC_SL1500_.jpg",
+      imagem: plainahitachi,
       descricao: "Alta eficiência com design ergonômico.",
     },
     {
       id: 9,
       nome: "Plaina Dremel 200W",
       preco: "R$ 279,90",
-      imagem: "https://m.media-amazon.com/images/I/71pE8YvKZoL._AC_SL1500_.jpg",
+      imagem: plainadremel,
       descricao: "Compacta para detalhes e acabamentos finos.",
     }
   ];

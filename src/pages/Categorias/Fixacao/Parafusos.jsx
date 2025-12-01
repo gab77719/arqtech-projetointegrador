@@ -1,66 +1,76 @@
+import parafusofenda from '../../../assets/parafusofenda.webp';
+import parafusosextavado from '../../../assets/parafusosextavado.webp';
+import parafusomadeira from '../../../assets/parafusomadeira.jpg';
+import parafusoallen from '../../../assets/parafusoallen.webp';
+import parafusosoberbo from '../../../assets/parafusosoberbo.webp';
+import parafusobrocante from '../../../assets/parafusobrocante.webp';
+import parafusopanela from '../../../assets/parafusopanela.webp';
+import parafusoflangeado from '../../../assets/parafusoflangeado.webp';
+import parafusoinox from '../../../assets/parafusoinox.webp';
+
 export default function Parafusos() {
     const produtos = [
       {
         id: 1,
         nome: "Parafuso Fenda Phillips 100un",
         preco: "R$ 15,90",
-        imagem: "https://m.media-amazon.com/images/I/61dXqKPzVtL._AC_SL1500_.jpg",
+        imagem: parafusofenda,
         descricao: "Aço galvanizado 4x40mm para uso geral.",
       },
       {
         id: 2,
         nome: "Parafuso Sextavado M8 50un",
         preco: "R$ 28,90",
-        imagem: "https://m.media-amazon.com/images/I/51bGqZvKDyL._AC_SL1000_.jpg",
+        imagem: parafusosextavado,
         descricao: "Para fixações estruturais robustas.",
       },
       {
         id: 3,
         nome: "Parafuso Madeira Cabeça Chata",
         preco: "R$ 19,90",
-        imagem: "https://m.media-amazon.com/images/I/71LvkXqzKiL._AC_SL1500_.jpg",
+        imagem: parafusomadeira,
         descricao: "Kit 200 peças sortidas para madeira.",
       },
       {
         id: 4,
         nome: "Parafuso Allen M6 100un",
         preco: "R$ 32,50",
-        imagem: "https://m.media-amazon.com/images/I/61T9ZvVqHhL._AC_SL1500_.jpg",
+        imagem: parafusoallen,
         descricao: "Cabeça sextavado interno, alta precisão.",
       },
       {
         id: 5,
         nome: "Parafuso Rosca Soberba 5x70mm",
         preco: "R$ 24,90",
-        imagem: "https://m.media-amazon.com/images/I/51wZqXXqnUL._AC_SL1000_.jpg",
+        imagem: parafusosoberbo,
         descricao: "120 unidades para fixação profissional.",
       },
       {
         id: 6,
         nome: "Parafuso Auto Perfurante 500un",
         preco: "R$ 38,90",
-        imagem: "https://m.media-amazon.com/images/I/71pE8YvKZoL._AC_SL1500_.jpg",
+        imagem: parafusobrocante,
         descricao: "Ideal para metal e chapas finas.",
       },
       {
         id: 7,
         nome: "Parafuso Cabeça Panela M5 150un",
         preco: "R$ 21,50",
-        imagem: "https://m.media-amazon.com/images/I/61nMxlQoA7L._AC_SL1500_.jpg",
+        imagem: parafusopanela,
         descricao: "Acabamento arredondado para eletrônicos.",
       },
       {
         id: 8,
         nome: "Parafuso Flangeado M10 80un",
         preco: "R$ 45,90",
-        imagem: "https://m.media-amazon.com/images/I/61rWC5f9YfL._AC_SL1500_.jpg",
+        imagem: parafusoflangeado,
         descricao: "Com arruela integrada para fixação rápida.",
       },
       {
         id: 9,
         nome: "Parafuso Inox A2 4x40mm 100un",
         preco: "R$ 52,90",
-        imagem: "https://m.media-amazon.com/images/I/71LvkXqzKiL._AC_SL1500_.jpg",
+        imagem: parafusoinox,
         descricao: "Resistência máxima contra oxidação.",
       },
     ];
@@ -70,7 +80,7 @@ export default function Parafusos() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-10 text-center">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">Parafusos</h1>
-            <p className="text-white text-lg pt-3">
+            <p className="text-white text-lg pt-3 mt-10">
               Fixação segura e resistente para todos os projetos
             </p>
           </div>
@@ -95,7 +105,7 @@ export default function Parafusos() {
                       {item.preco}
                     </span>
                     <button className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition-colors">
-                      Adicionar
+                      Comprar
                     </button>
                   </div>
                 </div>
