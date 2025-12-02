@@ -31,6 +31,8 @@ import Materiais2 from "./pages/Materiais2/Materiais2";
 import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
 import Produto from "./pages/Produto/Produto";
+import Pix from "./pages/Pix/Pix";
+import Cartão from "./pages/Cartão/Cartão";
 
 
 
@@ -108,6 +110,8 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Materiais2" element={<Materiais2 />} />
             <Route path="/Materiais3" element={<Materiais3 />} />
             <Route path="/Produto/:id" element={<Produto />} /> 
+            <Route path="/Pix" element={<Pix />} />
+            <Route path="/Cartão" element={<Cartão />} />
            
 
             {/* CATEGORIAS - MÁQUINAS */}
