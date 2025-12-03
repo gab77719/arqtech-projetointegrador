@@ -4,9 +4,10 @@ import {
   signInWithPopup, 
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,  // ← Já está importado aqui!
+  signInWithEmailAndPassword,
   updateProfile
 } from 'firebase/auth';
+import { getStorage } from 'firebase/storage'; // ← ADICIONAR ESTA LINHA
 
 // Suas configurações do Firebase
 const firebaseConfig = {
@@ -22,6 +23,7 @@ const firebaseConfig = {
 // Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const storage = getStorage(app); // ← ADICIONAR ESTA LINHA
 
 // Provider do Google
 const googleProvider = new GoogleAuthProvider();
@@ -84,4 +86,4 @@ export const signOut = async () => {
   }
 };
 
-export { auth };
+export { auth, storage }; // ← EXPORTAR O STORAGE AQUI
