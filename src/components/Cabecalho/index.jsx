@@ -38,13 +38,13 @@ export default function Cabecalho() {
       const response = await fetch(`http://localhost:8000/produtos/search?nome=${searchText}`);
       const produto = await response.json();
 
-     
+
       if (!response.ok) {
         alert("Produto não encontrado!");
         return;
       }
 
-   navigate(`/Produto/${produto.id}`);
+      navigate(`/Produto/${produto.id}`);
 
     } catch (error) {
       console.error("Erro na busca:", error);
@@ -73,7 +73,7 @@ export default function Cabecalho() {
         </div>
 
         <div className="cabecalho__actions">
-          {logged ? (
+          {logged && user ? (
             <>
               <Link to='/Compras' className='anuncio'>Compras</Link>
               <Link to='/Carrinho' className='anuncio'>
@@ -85,11 +85,12 @@ export default function Cabecalho() {
                   onClick={() => setMenuOpen(!menuOpen)}
                 >
                   <img
-                    src={user.photoURL}
-                    alt={user.name}
+                    src={user?.photoURL || "/default-profile.png"}
+                    alt={user?.name || "Usuário"}
                     className='profileImg'
                   />
-                  <span className="text-white">{user.name?.split(' ')[0]}</span>
+                  <span className="text-white">{user?.name?.split(' ')[0] || "Usuário"}</span>
+
                   <FaAngleDown size={16} className='arrow' />
                 </button>
                 {menuOpen && (

@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import { FaCamera, FaEye, FaEyeSlash } from "react-icons/fa";
 import { useAuth } from '../../contexts/AuthContext';
 import { updateProfile, updatePassword, EmailAuthProvider, reauthenticateWithCredential } from 'firebase/auth';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
 import { auth, storage } from '../../firebase';
 
 export default function Conta() {
@@ -28,6 +28,12 @@ export default function Conta() {
     confirm: false
   });
   const [passwordLoading, setPasswordLoading] = useState(false);
+
+  // Estados para deletar conta
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [deletePassword, setDeletePassword] = useState('');
+  const [showDeletePassword, setShowDeletePassword] = useState(false);
+  const [deleteLoading, setDeleteLoading] = useState(false);
 
   // Upload da foto de perfil
   const uploadProfilePicture = async (userId, file) => {
@@ -85,7 +91,7 @@ export default function Conta() {
       setUser(updatedUser);
       
       // CRÍTICO: Salvar no localStorage também
-      localStorage.setItem('user', JSON.stringify(updatedUser));
+      localStorage.setItem('auth_user', JSON.stringify(updatedUser));
 
       setSuccess('Foto atualizada com sucesso!');
       
@@ -169,12 +175,59 @@ export default function Conta() {
     }));
   };
 
+  // Deletar conta
+  const handleDeleteAccount = async () => {
+    setDeleteLoading(true);
+    setError(null);
+  
+    try {
+      const credential = EmailAuthProvider.credential(
+        auth.currentUser.email,
+        deletePassword
+      );
+  
+      // Reautenticar
+      await reauthenticateWithCredential(auth.currentUser, credential);
+  
+      // Deletar foto de perfil
+      if (user?.uid) {
+        try {
+          await deleteObject(ref(storage, `profile-pictures/${user.uid}`));
+        } catch {}
+      }
+  
+      // Deletar conta
+      await auth.currentUser.delete();
+  
+      // limpar context
+      setUser(null);
+  
+      // limpar apenas o necessário
+      localStorage.removeItem("auth_user");
+      localStorage.removeItem("auth_token");
+  
+      window.location.href = "/login";
+  
+    } catch (err) {
+  
+      if (err.code === "auth/wrong-password") {
+        setError("Senha incorreta.");
+      } else if (err.code === "auth/requires-recent-login") {
+        setError("Você precisa fazer login novamente para deletar a conta.");
+      } else {
+        setError("Erro ao deletar conta.");
+      }
+  
+    } finally {
+      setDeleteLoading(false);
+    }
+  };
+  
+  
+
   return (
     <>
-      
-      <div className="container-conta mt-20">
-        <section>
-          <div className="p-20">
+    <div className="p-20">
             <div className="profile-picture-container">
               <div className="profile-image-wrapper">
                 {preview ? (
@@ -207,6 +260,9 @@ export default function Conta() {
               {success && <p className="success-text text-green-500 mt-2">{success}</p>}
             </div>
           </div>
+      
+      <div className="container-conta mt-20">
+        <section>
 
           <p className="ml-20 text-3xl">Informações da conta</p>
           <div className="inputsC">
@@ -248,7 +304,38 @@ export default function Conta() {
               />
             </div>
           </div>
+
+          {/* Botão de deletar conta */}
+          <div style={{ 
+            marginLeft: '70px', 
+            marginTop: '60px', 
+            marginBottom: '60px', 
+            paddingTop: '30px', 
+            borderTop: '2px solid rgba(45, 56, 212, 0.3)',
+            maxWidth: '400px'
+          }}>
+            <button
+              onClick={() => setShowDeleteModal(true)}
+              style={{
+                padding: '15px 30px',
+                backgroundColor: '#dc2626',
+                color: 'white',
+                border: 'none',
+                borderRadius: '12px',
+                fontSize: '16px',
+                fontWeight: '600',
+                cursor: 'pointer',
+                boxShadow: '0px 2px 2px 2px rgba(220, 38, 38, 0.2)'
+              }}
+              onMouseEnter={(e) => e.target.style.backgroundColor = '#b91c1c'}
+              onMouseLeave={(e) => e.target.style.backgroundColor = '#dc2626'}
+            >
+              Deletar Conta Permanentemente
+            </button>
+          </div>
         </section>
+      </div>
+      <div>
       </div>
 
       {/* Modal de alteração de senha */}
@@ -345,6 +432,80 @@ export default function Conta() {
                   {passwordLoading ? 'Alterando...' : 'Confirmar'}
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de deletar conta */}
+      {showDeleteModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <h2 className="text-2xl font-bold mb-4 text-red-600">⚠️ Deletar Conta</h2>
+            
+            <div className="mb-6">
+              <p className="text-gray-700 mb-4">
+                Você tem certeza que deseja deletar sua conta permanentemente?
+              </p>
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                <p className="text-red-800 font-semibold mb-2">Esta ação irá:</p>
+                <ul className="text-red-700 text-sm space-y-1 list-disc list-inside">
+                  <li>Remover todos os seus dados</li>
+                  <li>Deletar sua foto de perfil</li>
+                  <li>Encerrar permanentemente sua conta</li>
+                  <li>Não poderá ser desfeita</li>
+                </ul>
+              </div>
+
+              <div className="relative">
+                <label className="block text-gray-700 mb-2 font-semibold">
+                  Digite sua senha para confirmar
+                </label>
+                <input
+                  type={showDeletePassword ? "text" : "password"}
+                  value={deletePassword}
+                  onChange={(e) => setDeletePassword(e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-black"
+                  placeholder="Sua senha"
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter') {
+                      handleDeleteAccount();
+                    }
+                  }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowDeletePassword(!showDeletePassword)}
+                  className="absolute right-3 top-11 text-gray-500"
+                >
+                  {showDeletePassword ? <FaEyeSlash /> : <FaEye />}
+                </button>
+              </div>
+
+              {error && <p className="text-red-500 mt-4">{error}</p>}
+            </div>
+
+            <div className="flex gap-4">
+              <button
+                type="button"
+                onClick={() => {
+                  setShowDeleteModal(false);
+                  setDeletePassword('');
+                  setError(null);
+                }}
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100"
+                disabled={deleteLoading}
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={handleDeleteAccount}
+                className="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 disabled:opacity-50"
+                disabled={deleteLoading}
+              >
+                {deleteLoading ? 'Deletando...' : 'Deletar Conta'}
+              </button>
             </div>
           </div>
         </div>

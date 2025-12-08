@@ -1,30 +1,40 @@
-.sobre-section hr{
-    width: 13%;
-    margin-left: 40px;
-}
-
-.sobre-section .titulo{
-    margin-left: 40px;
-    position: relative;
-}
-.sobre-section .sobre{
-    margin-left: 140px;
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 1.5;
-}
-.sobre-container{
+.sobre-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .sobre-container {
     display: flex;
-    gap: 70px;
-    margin-top: 40px;
-}
-.sobre-container img{
-    margin-top: 10px;
-    width: 300px;
-    height: auto;
-    margin-left: 170px;
-}
-.imagem {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     margin-top: 30px;
-   width: 100%;
+  }
+  
+
+  .sobre {
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+
+  .logo-sobre {
+    width: 260px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 20px;
+  }
+  
+ 
+  .imagem {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+   
+  .titulo {
+    text-align: left;
 }

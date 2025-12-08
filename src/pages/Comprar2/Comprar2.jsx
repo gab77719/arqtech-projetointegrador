@@ -131,6 +131,10 @@ export default function Comprar() {
           </div>
         </div>
       </div>
+
+
+    
+
     <Footer />
     </>
   );

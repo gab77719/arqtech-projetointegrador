@@ -86,4 +86,4 @@ export const signOut = async () => {
   }
 };
 
-export { auth, storage }; // ← EXPORTAR O STORAGE AQUI
+export { auth, storage }; 

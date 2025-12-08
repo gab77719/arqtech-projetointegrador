@@ -6,9 +6,14 @@
      transition: all 0.3s ease;
      background-color: rgba(97, 96, 96, 0.158);
 }
-.inputsC{
-    display: grid ;
-}
+.inputsC {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
 .Email {
     background-color: black;
     all: unset;
@@ -21,3 +26,19 @@
     margin-left: 70px;
     width: 300px;
 }
+
+.container-conta {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-conta section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-conta p.text-3xl {
+    text-align: center;
+    margin-top: -150px;
+  }

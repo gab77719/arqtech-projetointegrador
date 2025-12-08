@@ -54,7 +54,6 @@ export default function Entrar() {
     } catch (err) {
       console.error('Erro ao fazer login:', err);
       
-      // Mensagens de erro em português
       if (err.code === 'auth/user-not-found') {
         setError('Usuário não encontrado');
       } else if (err.code === 'auth/wrong-password') {
@@ -63,8 +62,10 @@ export default function Entrar() {
         setError('Email inválido');
       } else if (err.code === 'auth/too-many-requests') {
         setError('Muitas tentativas. Tente novamente mais tarde');
+      } else if (err.code === 'auth/invalid-credential') {
+        setError('Email ou senha inválidos');
       } else {
-        setError(err.message || 'Erro no login');
+        setError('Não foi possível entrar. Verifique seus dados.');
       }
     } finally {
       setLoading(false);

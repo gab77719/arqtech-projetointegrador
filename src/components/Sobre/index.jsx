@@ -1,6 +1,6 @@
 import './Sobre.css';
-import Logo from '../../public/Logo.png';
-import Dps from '../../assets/DpsS.png';
+import logo from '../../assets/logoarq.png';
+import imgfooter from '../../assets/imagens_footer.png';
 
 
 export default function Sobre() {
@@ -9,7 +9,7 @@ export default function Sobre() {
             <h1 className='titulo text-3xl'> Sobre Nós</h1>
             <hr />
             <div className='sobre-container'>
-            <p className='sobre'>A Arqtech é uma plataforma online especializada na <br/>
+            <p className='sobre mt-10'>A Arqtech é uma plataforma online especializada na <br/>
                  venda de ferramentas manuais, elétricas e acessórios <br/>
                  para uso doméstico ou profissional. Ele permite que <br/>
                  clientes escolham, comparem e comprem produtos de <br/>
@@ -24,10 +24,11 @@ export default function Sobre() {
                   bolso. Algo que você só encontra aqui, na ARQTECH <br/>
                   engenharia. 
                  </p>
-                 <img src={Logo} alt="" />
+                 <img src={logo} alt="imagem_sobre" className="logo-sobre mt-10" />
+
                  </div>
 
-                 <img src={Dps} alt="" className='imagem' />
+                 <img src={imgfooter} alt="" className='imagem' />
         </section>
         
     );}

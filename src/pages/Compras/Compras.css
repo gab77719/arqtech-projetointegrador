@@ -74,8 +74,8 @@
   }
   
   .status-enviado {
-    background-color: #fff3cd;
-    color: #856404;
+    background-color: #ff2424;
+    color: #000000;
   }
   
   /* ======== PRODUTOS ======== */
@@ -115,3 +115,19 @@
   .detalhes-btn:hover {
     background-color: #0077e6;
   }
+
+  /* STATUS PERSONALIZADOS */
+.status-cancelado {
+  background-color: #ffb3b3; /* vermelho claro */
+  color: #a10000; /* vermelho forte */
+}
+
+.status-entregue {
+  background-color: #d4edda; /* verde claro */
+  color: #155724; /* verde escuro */
+}
+
+.status-processando {
+  background-color: #fff3cd; /* amarelo claro */
+  color: #856404; /* amarelo escuro */
+}
