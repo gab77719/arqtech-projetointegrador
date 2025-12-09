@@ -31,8 +31,9 @@ import Materiais2 from "./pages/Materiais2/Materiais2";
 import Cabecalho from "./components/Cabecalho/index"
 import Materiais3 from "./pages/Materiais3/Materiais3";
 import Produto from "./pages/Produto/Produto";
-import Pix from "./pages/Pix/Pix";
+import Pix from "./pages/PIX/Pix";
 import Cartão from "./pages/Cartão/Cartão";
+import Finalizar from "./pages/Finalizar/Finalizar";
 
 
 
@@ -112,6 +113,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="/Produto/:id" element={<Produto />} /> 
             <Route path="/Pix" element={<Pix />} />
             <Route path="/Cartão" element={<Cartão />} />
+            <Route path= "/Finalizar" element= {<Finalizar/>} />
            
 
             {/* CATEGORIAS - MÁQUINAS */}

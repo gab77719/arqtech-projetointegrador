@@ -127,7 +127,7 @@ export default function Carrinho() {
               </h2>
 
               <Link
-                to="/Pagamentos"
+                to="/Endereço"
                 className="inline-block mt-2 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 w-max mx-auto"
               >
                 Continuar compra

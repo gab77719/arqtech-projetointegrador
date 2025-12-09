@@ -48,7 +48,7 @@ export default function Comprar() {
 
               <div className="flex gap-4">
                 {/* Botão comprar */}
-                <Link to="/Pagamentos">
+                <Link to="/Endereço">
                   <button className="flex-1 bg-transparent border border-gray-600 text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition">
                     Comprar
                   </button>

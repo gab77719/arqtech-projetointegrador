@@ -7,31 +7,29 @@ import {
   signInWithEmailAndPassword,
   updateProfile
 } from 'firebase/auth';
-import { getStorage } from 'firebase/storage'; // ← ADICIONAR ESTA LINHA
+import { getStorage } from 'firebase/storage';
+import { getFirestore } from 'firebase/firestore'; // ← ADICIONAR
 
-// Suas configurações do Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAc1YhihDxPqU2eIVAnJJFESu8djwz5Wig",
   authDomain: "arqtech-676cc.firebaseapp.com",
   projectId: "arqtech-676cc",
-  storageBucket: "arqtech-676cc.firebasestorage.app",
+  storageBucket: "arqtech-676cc.appspot.com",
   messagingSenderId: "15419671347",
   appId: "1:15419671347:web:c9a2b1f8000b3de3d27446",
   measurementId: "G-96HCQL20N8"
 };
 
-// Inicializa o Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const storage = getStorage(app); // ← ADICIONAR ESTA LINHA
+const storage = getStorage(app);
+const db = getFirestore(app); // ← ADICIONAR
 
-// Provider do Google
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
   prompt: 'select_account'
 });
 
-// Login com Google (já existente)
 export const signInWithGooglePopup = async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
@@ -42,22 +40,17 @@ export const signInWithGooglePopup = async () => {
   }
 };
 
-// Cadastro com Email e Senha
 export const signUpWithEmail = async (email, password, displayName) => {
   try {
-    // Cria o usuário
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
     
-    // Atualiza o perfil com o nome
     await updateProfile(user, {
       displayName: displayName,
       photoURL: `https://ui-avatars.com/api/?name=${displayName}&background=random`
     });
     
-    // Recarrega o usuário para pegar os dados atualizados
     await user.reload();
-    
     return auth.currentUser;
   } catch (error) {
     console.error('Erro no cadastro:', error);
@@ -65,7 +58,6 @@ export const signUpWithEmail = async (email, password, displayName) => {
   }
 };
 
-// Login com Email e Senha
 export const signInWithEmail = async (email, password) => {
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
@@ -76,7 +68,6 @@ export const signInWithEmail = async (email, password) => {
   }
 };
 
-// Logout
 export const signOut = async () => {
   try {
     await auth.signOut();
@@ -86,4 +77,4 @@ export const signOut = async () => {
   }
 };
 
-export { auth, storage }; 
+export { auth, storage, db }; // ← EXPORTAR db também
